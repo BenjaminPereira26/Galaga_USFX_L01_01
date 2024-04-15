@@ -27,7 +27,7 @@ void ANaveEnemigaKamikaze::Destruirse()
 void ANaveEnemigaKamikaze::Disparar()
 {
     TimerDisparo += GetWorld()->GetDeltaSeconds();
-    if (TimerDisparo < 1.0f)
+    if (TimerDisparo < 0.5f)
     {
         return; // No disparar si el tiempo es menor a 2 segundos
     }
