@@ -19,7 +19,6 @@
 #include "C:/SIS457 LABS/Galaga_USFX_L01-master/Source/Galaga_USFX_L01/NaveEnemigaEspia.cpp"
 #include "C:/SIS457 LABS/Galaga_USFX_L01-master/Source/Galaga_USFX_L01/NaveEnemigaEspiaNieta01.cpp"
 #include "C:/SIS457 LABS/Galaga_USFX_L01-master/Source/Galaga_USFX_L01/NaveEnemigaEspiaNieta02.cpp"
-#include "C:/SIS457 LABS/Galaga_USFX_L01-master/Source/Galaga_USFX_L01/NaveEnemigaKamikaze.cpp"
 #include "C:/SIS457 LABS/Galaga_USFX_L01-master/Source/Galaga_USFX_L01/NaveEnemigaKamikazeNieta01.cpp"
 #include "C:/SIS457 LABS/Galaga_USFX_L01-master/Source/Galaga_USFX_L01/NaveEnemigaKamikazeNieta02.cpp"
 #include "C:/SIS457 LABS/Galaga_USFX_L01-master/Source/Galaga_USFX_L01/NaveEnemigaNodriza.cpp"

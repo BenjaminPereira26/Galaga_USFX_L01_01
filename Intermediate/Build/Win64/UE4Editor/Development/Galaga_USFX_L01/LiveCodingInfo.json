@@ -22,7 +22,6 @@
 			"NaveEnemigaEspia.cpp.obj",
 			"NaveEnemigaEspiaNieta01.cpp.obj",
 			"NaveEnemigaEspiaNieta02.cpp.obj",
-			"NaveEnemigaKamikaze.cpp.obj",
 			"NaveEnemigaKamikazeNieta01.cpp.obj",
 			"NaveEnemigaKamikazeNieta02.cpp.obj",
 			"NaveEnemigaNodriza.cpp.obj",
@@ -35,7 +34,8 @@
 			"NaveEnemigaTransporteNieta01.cpp.obj",
 			"NaveEnemigaTransporteNieta02.cpp.obj",
 			"Record.cpp.obj",
-			"Vidas.cpp.obj"
+			"Vidas.cpp.obj",
+			"NaveEnemigaKamikaze.cpp.obj"
 		],
 		"Module.Galaga_USFX_L01.gen.cpp.obj": [
 			"Barrera.gen.cpp.obj",

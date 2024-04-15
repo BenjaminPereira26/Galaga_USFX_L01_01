@@ -1,13 +1,10 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
 #include "NaveEnemigaKamikaze.h"
+#include "Galaga_USFX_L01Projectile.h"
 #include "MovimientoNaves.h"
 
 
-void ANaveEnemigaKamikaze::ShotTimerExpired()
-{
-	bCanFire = false;
-}
 
 ANaveEnemigaKamikaze::ANaveEnemigaKamikaze()
 {
@@ -15,7 +12,7 @@ ANaveEnemigaKamikaze::ANaveEnemigaKamikaze()
 	mallaNaveEnemiga->SetStaticMesh(ShipMesh.Object);
 	PrimaryActorTick.bCanEverTick = true;
 	MovimientoNaves = CreateDefaultSubobject<UMovimientoNaves>(TEXT("MovementComponent"));
-	
+
 }
 
 void ANaveEnemigaKamikaze::Mover(float DeltaTime)
@@ -29,7 +26,15 @@ void ANaveEnemigaKamikaze::Destruirse()
 
 void ANaveEnemigaKamikaze::Disparar()
 {
-    
+   
+    FVector FireDirection = -GetActorForwardVector();
+    FVector SpawnLocation = GetActorLocation() + FireDirection * 100.0f;
+    FRotator SpawnRotation = FireDirection.Rotation();
+    UWorld* const World = GetWorld();
+        if (World != nullptr)
+    {
+         World->SpawnActor<AGalaga_USFX_L01Projectile>(AGalaga_USFX_L01Projectile::StaticClass(), SpawnLocation, SpawnRotation);
+    }
 }
 
 void ANaveEnemigaKamikaze::CaidaLibre()
@@ -42,4 +47,5 @@ void ANaveEnemigaKamikaze::Tick(float DeltaTime)
 	Mover(DeltaTime);
 	Disparar();
 	Mover(DeltaTime);
+
 }
