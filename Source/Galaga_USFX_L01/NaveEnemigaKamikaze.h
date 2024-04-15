@@ -15,7 +15,7 @@ class GALAGA_USFX_L01_API ANaveEnemigaKamikaze : public ANaveEnemiga
 	GENERATED_BODY()
 private:
 	int tiempoSuicidio;
-
+	float TimerDisparo;
 	
 public:
 	ANaveEnemigaKamikaze();

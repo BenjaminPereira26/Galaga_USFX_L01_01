@@ -12,7 +12,7 @@ ANaveEnemigaKamikaze::ANaveEnemigaKamikaze()
 	mallaNaveEnemiga->SetStaticMesh(ShipMesh.Object);
 	PrimaryActorTick.bCanEverTick = true;
 	MovimientoNaves = CreateDefaultSubobject<UMovimientoNaves>(TEXT("MovementComponent"));
-
+	
 }
 
 void ANaveEnemigaKamikaze::Mover(float DeltaTime)
@@ -26,7 +26,11 @@ void ANaveEnemigaKamikaze::Destruirse()
 
 void ANaveEnemigaKamikaze::Disparar()
 {
-   
+    TimerDisparo += GetWorld()->GetDeltaSeconds();
+    if (TimerDisparo < 1.0f)
+    {
+        return; // No disparar si el tiempo es menor a 2 segundos
+    }
     FVector FireDirection = -GetActorForwardVector();
     FVector SpawnLocation = GetActorLocation() + FireDirection * 100.0f;
     FRotator SpawnRotation = FireDirection.Rotation();
@@ -34,6 +38,7 @@ void ANaveEnemigaKamikaze::Disparar()
         if (World != nullptr)
     {
          World->SpawnActor<AGalaga_USFX_L01Projectile>(AGalaga_USFX_L01Projectile::StaticClass(), SpawnLocation, SpawnRotation);
+         TimerDisparo = 0.0f;
     }
 }
 
