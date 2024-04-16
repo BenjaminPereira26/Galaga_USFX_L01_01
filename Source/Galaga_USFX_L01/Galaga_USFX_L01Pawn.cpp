@@ -12,6 +12,8 @@
 #include "Engine/StaticMesh.h"
 #include "Kismet/GameplayStatics.h"
 #include "Sound/SoundBase.h"
+#include "MyAgujeroNegro.h"
+#include "Galaga_USFX_L01GameMode.h"
 
 const FName AGalaga_USFX_L01Pawn::MoveForwardBinding("MoveForward");
 const FName AGalaga_USFX_L01Pawn::MoveRightBinding("MoveRight");
@@ -43,7 +45,7 @@ AGalaga_USFX_L01Pawn::AGalaga_USFX_L01Pawn()
 	CameraComponent = CreateDefaultSubobject<UCameraComponent>(TEXT("TopDownCamera"));
 	CameraComponent->SetupAttachment(CameraBoom, USpringArmComponent::SocketName);
 	CameraComponent->bUsePawnControlRotation = false;	// Camera does not rotate relative to arm
-
+	
 	// Movement
 	MoveSpeed = 1000.0f;
 	// Weapon
@@ -75,7 +77,7 @@ void AGalaga_USFX_L01Pawn::Tick(float DeltaSeconds)
 
 	// Calculate  movement
 	const FVector Movement = MoveDirection * MoveSpeed * DeltaSeconds;
-
+	GEngine->AddOnScreenDebugMessage(-1, 15.f, FColor::Yellow, FString::Printf(TEXT("Valor velocidad %f"),MoveSpeed));
 	// If non-zero size, move this actor
 	if (Movement.SizeSquared() > 0.0f)
 	{
@@ -98,6 +100,22 @@ void AGalaga_USFX_L01Pawn::Tick(float DeltaSeconds)
 
 	// Try and fire a shot
 	FireShot(FireDirection);
+	FVector UbicacionObjeto = ObtenerUbicacionObjetoQueSemueve();
+	FVector UbicacionPawn = GetActorLocation();
+
+	float Distancia = FVector::Dist(UbicacionObjeto, UbicacionPawn);
+
+	// Definir un umbral pequeño para considerar las posiciones como iguales
+	float Umbral = 300.0f; // Puedes ajustar este valor según sea necesario
+
+	// Verificar si la distancia es menor que el umbral
+	if (Distancia < Umbral)
+	{
+		GEngine->AddOnScreenDebugMessage(-1,15.f,FColor::Yellow,FString::Printf(TEXT("Funciona")));
+		// Establecer la velocidad a 0.0f
+		MoveSpeed = 0.0f;
+	}
+	
 }
 
 void AGalaga_USFX_L01Pawn::FireShot(FVector FireDirection)
@@ -137,4 +155,15 @@ void AGalaga_USFX_L01Pawn::ShotTimerExpired()
 {
 	bCanFire = true;
 }
+
+FVector AGalaga_USFX_L01Pawn::ObtenerUbicacionObjetoQueSemueve()
+{
+	if (ObjetoQueSemueve)
+	{
+		return ObjetoQueSemueve->GetActorLocation();
+	}
+	return FVector::ZeroVector;
+}
+
+
 

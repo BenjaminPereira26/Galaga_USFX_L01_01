@@ -12,6 +12,7 @@
 #include "CapsulaEnergia50pts.h"
 #include "CapsulaEnergia100pts.h"
 #include "CapsulaEnergia200pts.h"
+#include "MyAgujeroNegro.h"
 
 AGalaga_USFX_L01GameMode::AGalaga_USFX_L01GameMode()
 {
@@ -185,6 +186,22 @@ void AGalaga_USFX_L01GameMode::BeginPlay()
 			}
 		}
 		ColumnaNavesEnemigasKamikaze.Add(Columna, NavesEnColumna);
+	}
+	const int32 NumeroDeColumnasAN = 1;
+	const int32 NumeroDeFilasAN = 5;
+
+	for (int32 Columna = 0; Columna < NumeroDeColumnasAN; ++Columna)
+	{
+		TArray<AMyAgujeroNegro*> AgujerosEnColumna;
+		for (int32 Fila = 0; Fila < NumeroDeFilasAN; ++Fila)
+		{
+			FVector SpawningLocation = FVector(1700.0f, FMath::RandRange(-500.0f, 200.0f) + 100.0f, 165.0f);
+			FRotator SpawningRotation = FRotator::ZeroRotator;
+
+			AMyAgujeroNegro* NuevoAN= GetWorld()->SpawnActor<AMyAgujeroNegro>(SpawningLocation, SpawningRotation);
+			AgujerosEnColumna.Add(NuevoAN);
+		}
+		ColumnaAgujeroNegro.Add(Columna, AgujerosEnColumna);
 	}
 
 	TiempoTranscurrido = 0;

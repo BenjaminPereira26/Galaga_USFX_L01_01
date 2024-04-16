@@ -10,8 +10,6 @@
 			"CapsulaEnergia50pts.cpp.obj",
 			"DisparoNaves.cpp.obj",
 			"Galaga_USFX_L01.cpp.obj",
-			"Galaga_USFX_L01GameMode.cpp.obj",
-			"Galaga_USFX_L01Pawn.cpp.obj",
 			"Galaga_USFX_L01Projectile.cpp.obj",
 			"Inventario.cpp.obj",
 			"MovimientoNaves.cpp.obj",
@@ -35,6 +33,10 @@
 			"NaveEnemigaTransporteNieta02.cpp.obj",
 			"Record.cpp.obj",
 			"Vidas.cpp.obj",
+			"AgujeroNegro.cpp.obj",
+			"Galaga_USFX_L01GameMode.cpp.obj",
+			"Galaga_USFX_L01Pawn.cpp.obj",
+			"MyAgujeroNegro.cpp.obj",
 			"NaveEnemigaKamikaze.cpp.obj"
 		],
 		"Module.Galaga_USFX_L01.gen.cpp.obj": [
@@ -45,9 +47,7 @@
 			"CapsulaEnergia200pts.gen.cpp.obj",
 			"CapsulaEnergia50pts.gen.cpp.obj",
 			"DisparoNaves.gen.cpp.obj",
-			"Galaga_USFX_L01.init.gen.cpp.obj",
 			"Galaga_USFX_L01GameMode.gen.cpp.obj",
-			"Galaga_USFX_L01Pawn.gen.cpp.obj",
 			"Galaga_USFX_L01Projectile.gen.cpp.obj",
 			"Inventario.gen.cpp.obj",
 			"MovimientoNaves.gen.cpp.obj",
@@ -58,9 +58,6 @@
 			"NaveEnemigaEspia.gen.cpp.obj",
 			"NaveEnemigaEspiaNieta01.gen.cpp.obj",
 			"NaveEnemigaEspiaNieta02.gen.cpp.obj",
-			"NaveEnemigaKamikaze.gen.cpp.obj",
-			"NaveEnemigaKamikazeNieta01.gen.cpp.obj",
-			"NaveEnemigaKamikazeNieta02.gen.cpp.obj",
 			"NaveEnemigaNodriza.gen.cpp.obj",
 			"NaveEnemigaNodrizaNieta01.gen.cpp.obj",
 			"NaveEnemigaNodrizaNieta02.gen.cpp.obj",
@@ -71,7 +68,14 @@
 			"NaveEnemigaTransporteNieta01.gen.cpp.obj",
 			"NaveEnemigaTransporteNieta02.gen.cpp.obj",
 			"Record.gen.cpp.obj",
-			"Vidas.gen.cpp.obj"
+			"Vidas.gen.cpp.obj",
+			"AgujeroNegro.gen.cpp.obj",
+			"Galaga_USFX_L01.init.gen.cpp.obj",
+			"Galaga_USFX_L01Pawn.gen.cpp.obj",
+			"MyAgujeroNegro.gen.cpp.obj",
+			"NaveEnemigaKamikaze.gen.cpp.obj",
+			"NaveEnemigaKamikazeNieta01.gen.cpp.obj",
+			"NaveEnemigaKamikazeNieta02.gen.cpp.obj"
 		]
 	}
 }

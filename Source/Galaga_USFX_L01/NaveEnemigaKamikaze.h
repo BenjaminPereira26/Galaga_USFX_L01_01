@@ -19,13 +19,16 @@ private:
 	
 public:
 	ANaveEnemigaKamikaze();
-
+public:
+	UPROPERTY(EditAnywhere)
+	class AMyAgujeroNegro* ObjetoQueSemueve; // Referencia al objeto que se mueve
 protected:
 	virtual void Mover(float DeltaTime);
 	virtual void Destruirse();
 	virtual void Disparar();
 	virtual void CaidaLibre();
 	class UMovimientoNaves* MovimientoNaves;
+	FVector ObtenerUbicacionObjetoQueSemueve();
 	
 public:
 	virtual void Tick(float DeltaTime) override;

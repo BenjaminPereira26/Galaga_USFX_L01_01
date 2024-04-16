@@ -22,7 +22,6 @@ C:\SIS457 LABS\Galaga_USFX_L01-master\Intermediate\Build\Win64\UE4Editor\Inc\Gal
 C:/SIS457 LABS/Galaga_USFX_L01-master/Intermediate/Build/Win64/UE4Editor/Inc/Galaga_USFX_L01/DisparoNaves.gen.cpp
 C:\SIS457 LABS\Galaga_USFX_L01-master\Source\Galaga_USFX_L01/DisparoNaves.h
 C:\SIS457 LABS\Galaga_USFX_L01-master\Intermediate\Build\Win64\UE4Editor\Inc\Galaga_USFX_L01\DisparoNaves.generated.h
-C:/SIS457 LABS/Galaga_USFX_L01-master/Intermediate/Build/Win64/UE4Editor/Inc/Galaga_USFX_L01/Galaga_USFX_L01.init.gen.cpp
 C:/SIS457 LABS/Galaga_USFX_L01-master/Intermediate/Build/Win64/UE4Editor/Inc/Galaga_USFX_L01/Galaga_USFX_L01GameMode.gen.cpp
 C:\SIS457 LABS\Galaga_USFX_L01-master\Source\Galaga_USFX_L01/Galaga_USFX_L01GameMode.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/GameModeBase.h
@@ -30,15 +29,6 @@ C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\Engine/
 C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ServerStatReplicator.generated.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameModeBase.generated.h
 C:\SIS457 LABS\Galaga_USFX_L01-master\Intermediate\Build\Win64\UE4Editor\Inc\Galaga_USFX_L01\Galaga_USFX_L01GameMode.generated.h
-C:/SIS457 LABS/Galaga_USFX_L01-master/Intermediate/Build/Win64/UE4Editor/Inc/Galaga_USFX_L01/Galaga_USFX_L01Pawn.gen.cpp
-C:\SIS457 LABS\Galaga_USFX_L01-master\Source\Galaga_USFX_L01/Galaga_USFX_L01Pawn.h
-C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/Character.h
-C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/CharacterMovementReplication.h
-C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\CharacterMovementReplication.generated.h
-C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/RootMotionSource.h
-C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\RootMotionSource.generated.h
-C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\Character.generated.h
-C:\SIS457 LABS\Galaga_USFX_L01-master\Intermediate\Build\Win64\UE4Editor\Inc\Galaga_USFX_L01\Galaga_USFX_L01Pawn.generated.h
 C:/SIS457 LABS/Galaga_USFX_L01-master/Intermediate/Build/Win64/UE4Editor/Inc/Galaga_USFX_L01/Galaga_USFX_L01Projectile.gen.cpp
 C:\SIS457 LABS\Galaga_USFX_L01-master\Source\Galaga_USFX_L01/Galaga_USFX_L01Projectile.h
 C:\SIS457 LABS\Galaga_USFX_L01-master\Intermediate\Build\Win64\UE4Editor\Inc\Galaga_USFX_L01\Galaga_USFX_L01Projectile.generated.h
@@ -69,15 +59,6 @@ C:\SIS457 LABS\Galaga_USFX_L01-master\Intermediate\Build\Win64\UE4Editor\Inc\Gal
 C:/SIS457 LABS/Galaga_USFX_L01-master/Intermediate/Build/Win64/UE4Editor/Inc/Galaga_USFX_L01/NaveEnemigaEspiaNieta02.gen.cpp
 C:\SIS457 LABS\Galaga_USFX_L01-master\Source\Galaga_USFX_L01/NaveEnemigaEspiaNieta02.h
 C:\SIS457 LABS\Galaga_USFX_L01-master\Intermediate\Build\Win64\UE4Editor\Inc\Galaga_USFX_L01\NaveEnemigaEspiaNieta02.generated.h
-C:/SIS457 LABS/Galaga_USFX_L01-master/Intermediate/Build/Win64/UE4Editor/Inc/Galaga_USFX_L01/NaveEnemigaKamikaze.gen.cpp
-C:\SIS457 LABS\Galaga_USFX_L01-master\Source\Galaga_USFX_L01/NaveEnemigaKamikaze.h
-C:\SIS457 LABS\Galaga_USFX_L01-master\Intermediate\Build\Win64\UE4Editor\Inc\Galaga_USFX_L01\NaveEnemigaKamikaze.generated.h
-C:/SIS457 LABS/Galaga_USFX_L01-master/Intermediate/Build/Win64/UE4Editor/Inc/Galaga_USFX_L01/NaveEnemigaKamikazeNieta01.gen.cpp
-C:\SIS457 LABS\Galaga_USFX_L01-master\Source\Galaga_USFX_L01/NaveEnemigaKamikazeNieta01.h
-C:\SIS457 LABS\Galaga_USFX_L01-master\Intermediate\Build\Win64\UE4Editor\Inc\Galaga_USFX_L01\NaveEnemigaKamikazeNieta01.generated.h
-C:/SIS457 LABS/Galaga_USFX_L01-master/Intermediate/Build/Win64/UE4Editor/Inc/Galaga_USFX_L01/NaveEnemigaKamikazeNieta02.gen.cpp
-C:\SIS457 LABS\Galaga_USFX_L01-master\Source\Galaga_USFX_L01/NaveEnemigaKamikazeNieta02.h
-C:\SIS457 LABS\Galaga_USFX_L01-master\Intermediate\Build\Win64\UE4Editor\Inc\Galaga_USFX_L01\NaveEnemigaKamikazeNieta02.generated.h
 C:/SIS457 LABS/Galaga_USFX_L01-master/Intermediate/Build/Win64/UE4Editor/Inc/Galaga_USFX_L01/NaveEnemigaNodriza.gen.cpp
 C:\SIS457 LABS\Galaga_USFX_L01-master\Source\Galaga_USFX_L01/NaveEnemigaNodriza.h
 C:\SIS457 LABS\Galaga_USFX_L01-master\Intermediate\Build\Win64\UE4Editor\Inc\Galaga_USFX_L01\NaveEnemigaNodriza.generated.h

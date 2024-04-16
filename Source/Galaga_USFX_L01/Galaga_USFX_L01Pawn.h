@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Character.h"
+#include "MyAgujeroNegro.h"
 #include "Galaga_USFX_L01Pawn.generated.h"
 
 UCLASS(Blueprintable)
@@ -58,7 +59,9 @@ public:
 	static const FName MoveRightBinding;
 	static const FName FireForwardBinding;
 	static const FName FireRightBinding;
-
+	
+public:
+	FVector ObtenerUbicacionObjetoQueSemueve();
 private:
 
 	/* Flag to control firing  */
@@ -66,6 +69,9 @@ private:
 
 	/** Handle for efficient management of ShotTimerExpired timer */
 	FTimerHandle TimerHandle_ShotTimerExpired;
+public:
+	UPROPERTY(EditAnywhere)
+	class AMyAgujeroNegro* ObjetoQueSemueve; // Referencia al objeto que se mueve
 
 public:
 	/** Returns ShipMeshComponent subobject **/

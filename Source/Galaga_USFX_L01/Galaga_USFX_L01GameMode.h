@@ -16,7 +16,7 @@ class ANaveEnemigaTransporte;
 class ACapsulaEnergia50pts;
 class ACapsulaEnergia100pts;
 class ACapsulaEnergia200pts;
-
+class AMyAgujeroNegro;
 UCLASS(MinimalAPI)
 class AGalaga_USFX_L01GameMode : public AGameModeBase
 {
@@ -40,6 +40,7 @@ public:
 	TArray<ACapsulaEnergia50pts*> TACapsulasEnergia50pts;
 	TArray<ACapsulaEnergia100pts*> TACapsulasEnergia100pts;
 	TArray<ACapsulaEnergia200pts*> TACapsulasEnergia200pts;
+	TArray<AMyAgujeroNegro*> TAgujeroNegro;
 private:
 	int TiempoTranscurrido;
 
@@ -57,5 +58,5 @@ public:
 	TMap<int32, TArray<ACapsulaEnergia50pts*>> ColumnaCapsulasEnergia50pts;
 	TMap<int32, TArray<ACapsulaEnergia100pts*>> ColumnaCapsulasEnergia100pts;
 	TMap<int32, TArray<ACapsulaEnergia200pts*>> ColumnaCapsulasEnergia200pts;
-
-};
+	TMap<int32, TArray<AMyAgujeroNegro*>> ColumnaAgujeroNegro;
+ };
