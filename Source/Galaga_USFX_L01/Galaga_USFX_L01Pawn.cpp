@@ -77,7 +77,7 @@ void AGalaga_USFX_L01Pawn::Tick(float DeltaSeconds)
 
 	// Calculate  movement
 	const FVector Movement = MoveDirection * MoveSpeed * DeltaSeconds;
-	GEngine->AddOnScreenDebugMessage(-1, 15.f, FColor::Yellow, FString::Printf(TEXT("Valor velocidad %f"),MoveSpeed));
+	/*GEngine->AddOnScreenDebugMessage(-1, 15.f, FColor::Yellow, FString::Printf(TEXT("Valor velocidad %f"), MoveSpeed));*/
 	// If non-zero size, move this actor
 	if (Movement.SizeSquared() > 0.0f)
 	{
@@ -100,7 +100,7 @@ void AGalaga_USFX_L01Pawn::Tick(float DeltaSeconds)
 
 	// Try and fire a shot
 	FireShot(FireDirection);
-	FVector UbicacionObjeto = ObtenerUbicacionObjetoQueSemueve();
+	/*FVector UbicacionObjeto = ObtenerUbicacionObjetoQueSemueve();
 	FVector UbicacionPawn = GetActorLocation();
 
 	float Distancia = FVector::Dist(UbicacionObjeto, UbicacionPawn);
@@ -115,6 +115,7 @@ void AGalaga_USFX_L01Pawn::Tick(float DeltaSeconds)
 		// Establecer la velocidad a 0.0f
 		MoveSpeed = 0.0f;
 	}
+	*/
 	
 }
 
