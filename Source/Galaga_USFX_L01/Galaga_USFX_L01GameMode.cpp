@@ -14,6 +14,8 @@
 #include "CapsulaEnergia200pts.h"
 #include "MyAgujeroNegro.h"
 #include "FNECaza.h"
+#include "FNEKamikaze.h"
+#include "FNEEspia.h"
 
 AGalaga_USFX_L01GameMode::AGalaga_USFX_L01GameMode()
 {
@@ -206,7 +208,11 @@ void AGalaga_USFX_L01GameMode::BeginPlay()
 	}
 	
 	AFabricaNavesEnemigas* FNECaza = GetWorld() -> SpawnActor<AFNECaza> (AFNECaza::StaticClass());
-	ANaveEnemiga* NaveEnemiga = FNECaza->OrderNave("Caza");
+	ANaveEnemiga* NaveEnemigaC = FNECaza->OrderNave("Caza");
+	AFabricaNavesEnemigas* FNEKamikaze = GetWorld()->SpawnActor<AFNEKamikaze>(AFNEKamikaze::StaticClass());
+	ANaveEnemiga* NaveEnemigaK = FNEKamikaze->OrderNave("Kamikaze");
+	AFabricaNavesEnemigas* FNEEspia = GetWorld()->SpawnActor<AFNEEspia>(AFNEEspia::StaticClass());
+	ANaveEnemiga* NaveEnemigaE = FNEEspia->OrderNave("Espia");
 	
 	TiempoTranscurrido = 0;
 	}

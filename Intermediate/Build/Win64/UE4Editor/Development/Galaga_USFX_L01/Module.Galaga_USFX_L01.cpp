@@ -9,6 +9,7 @@
 #include "C:/SIS457 LABS/Galaga_USFX_L01-master/Source/Galaga_USFX_L01/DisparoNaves.cpp"
 #include "C:/SIS457 LABS/Galaga_USFX_L01-master/Source/Galaga_USFX_L01/FabricaNavesEnemigas.cpp"
 #include "C:/SIS457 LABS/Galaga_USFX_L01-master/Source/Galaga_USFX_L01/FNE_Caza.cpp"
+#include "C:/SIS457 LABS/Galaga_USFX_L01-master/Source/Galaga_USFX_L01/FNECaza.cpp"
 #include "C:/SIS457 LABS/Galaga_USFX_L01-master/Source/Galaga_USFX_L01/Galaga_USFX_L01.cpp"
 #include "C:/SIS457 LABS/Galaga_USFX_L01-master/Source/Galaga_USFX_L01/Galaga_USFX_L01Pawn.cpp"
 #include "C:/SIS457 LABS/Galaga_USFX_L01-master/Source/Galaga_USFX_L01/Galaga_USFX_L01Projectile.cpp"

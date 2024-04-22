@@ -43,3 +43,7 @@ C:\SIS457 LABS\Galaga_USFX_L01-master\Source\Galaga_USFX_L01\FNECaza.h
 C:\SIS457 LABS\Galaga_USFX_L01-master\Source\Galaga_USFX_L01\FabricaNavesEnemigas.h
 C:\SIS457 LABS\Galaga_USFX_L01-master\Intermediate\Build\Win64\UE4Editor\Inc\Galaga_USFX_L01\FabricaNavesEnemigas.generated.h
 C:\SIS457 LABS\Galaga_USFX_L01-master\Intermediate\Build\Win64\UE4Editor\Inc\Galaga_USFX_L01\FNECaza.generated.h
+C:\SIS457 LABS\Galaga_USFX_L01-master\Source\Galaga_USFX_L01\FNEKamikaze.h
+C:\SIS457 LABS\Galaga_USFX_L01-master\Intermediate\Build\Win64\UE4Editor\Inc\Galaga_USFX_L01\FNEKamikaze.generated.h
+C:\SIS457 LABS\Galaga_USFX_L01-master\Source\Galaga_USFX_L01\FNEEspia.h
+C:\SIS457 LABS\Galaga_USFX_L01-master\Intermediate\Build\Win64\UE4Editor\Inc\Galaga_USFX_L01\FNEEspia.generated.h

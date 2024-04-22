@@ -33,6 +33,11 @@ C:\SIS457 LABS\Galaga_USFX_L01-master\Intermediate\Build\Win64\UE4Editor\Inc\Gal
 C:/SIS457 LABS/Galaga_USFX_L01-master/Source/Galaga_USFX_L01/FNE_Caza.cpp
 C:\SIS457 LABS\Galaga_USFX_L01-master\Source\Galaga_USFX_L01\FNE_Caza.h
 C:\SIS457 LABS\Galaga_USFX_L01-master\Intermediate\Build\Win64\UE4Editor\Inc\Galaga_USFX_L01\FNE_Caza.generated.h
+C:/SIS457 LABS/Galaga_USFX_L01-master/Source/Galaga_USFX_L01/FNECaza.cpp
+C:\SIS457 LABS\Galaga_USFX_L01-master\Source\Galaga_USFX_L01\FNECaza.h
+C:\SIS457 LABS\Galaga_USFX_L01-master\Intermediate\Build\Win64\UE4Editor\Inc\Galaga_USFX_L01\FNECaza.generated.h
+C:\SIS457 LABS\Galaga_USFX_L01-master\Source\Galaga_USFX_L01\NaveEnemigaCaza.h
+C:\SIS457 LABS\Galaga_USFX_L01-master\Intermediate\Build\Win64\UE4Editor\Inc\Galaga_USFX_L01\NaveEnemigaCaza.generated.h
 C:/SIS457 LABS/Galaga_USFX_L01-master/Source/Galaga_USFX_L01/Galaga_USFX_L01.cpp
 C:\SIS457 LABS\Galaga_USFX_L01-master\Source\Galaga_USFX_L01\Galaga_USFX_L01.h
 C:/SIS457 LABS/Galaga_USFX_L01-master/Source/Galaga_USFX_L01/Galaga_USFX_L01Pawn.cpp
@@ -79,8 +84,6 @@ C:\SIS457 LABS\Galaga_USFX_L01-master\Intermediate\Build\Win64\UE4Editor\Inc\Gal
 C:/SIS457 LABS/Galaga_USFX_L01-master/Source/Galaga_USFX_L01/MyAgujeroNegro.cpp
 C:/SIS457 LABS/Galaga_USFX_L01-master/Source/Galaga_USFX_L01/NaveEnemiga.cpp
 C:/SIS457 LABS/Galaga_USFX_L01-master/Source/Galaga_USFX_L01/NaveEnemigaCaza.cpp
-C:\SIS457 LABS\Galaga_USFX_L01-master\Source\Galaga_USFX_L01\NaveEnemigaCaza.h
-C:\SIS457 LABS\Galaga_USFX_L01-master\Intermediate\Build\Win64\UE4Editor\Inc\Galaga_USFX_L01\NaveEnemigaCaza.generated.h
 C:/SIS457 LABS/Galaga_USFX_L01-master/Source/Galaga_USFX_L01/NaveEnemigaCazaNieta01.cpp
 C:\SIS457 LABS\Galaga_USFX_L01-master\Source\Galaga_USFX_L01\NaveEnemigaCazaNieta01.h
 C:\SIS457 LABS\Galaga_USFX_L01-master\Intermediate\Build\Win64\UE4Editor\Inc\Galaga_USFX_L01\NaveEnemigaCazaNieta01.generated.h
