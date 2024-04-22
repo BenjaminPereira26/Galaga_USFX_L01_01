@@ -204,9 +204,10 @@ void AGalaga_USFX_L01GameMode::BeginPlay()
 		}
 		ColumnaAgujeroNegro.Add(Columna, AgujerosEnColumna);
 	}
-	FVector SpawningLocation = FVector(100.0f, 200.0f, 250.0f);
-	FRotator SpawningRotation = FRotator::ZeroRotator;
-	AFabricaNavesEnemigas* FNECaza = GetWorld() -> SpawnActor<AFNECaza> (AFNECaza::StaticClass(),SpawningLocation, SpawningRotation);
+	
+	AFabricaNavesEnemigas* FNECaza = GetWorld() -> SpawnActor<AFNECaza> (AFNECaza::StaticClass());
+	ANaveEnemiga* NaveEnemiga = FNECaza->OrderNave("Caza");
+	
 	TiempoTranscurrido = 0;
 	}
 
