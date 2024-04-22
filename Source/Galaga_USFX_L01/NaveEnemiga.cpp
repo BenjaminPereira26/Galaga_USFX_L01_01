@@ -33,3 +33,8 @@ void ANaveEnemiga::Tick(float DeltaTime)
 	Super::Tick(DeltaTime);
 
 }
+
+FString ANaveEnemiga::GetNaveName()
+{
+	return NaveName;
+}

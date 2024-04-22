@@ -13,6 +13,7 @@
 #include "CapsulaEnergia100pts.h"
 #include "CapsulaEnergia200pts.h"
 #include "MyAgujeroNegro.h"
+#include "FNECaza.h"
 
 AGalaga_USFX_L01GameMode::AGalaga_USFX_L01GameMode()
 {
@@ -203,7 +204,9 @@ void AGalaga_USFX_L01GameMode::BeginPlay()
 		}
 		ColumnaAgujeroNegro.Add(Columna, AgujerosEnColumna);
 	}
-
+	FVector SpawningLocation = FVector(100.0f, 200.0f, 250.0f);
+	FRotator SpawningRotation = FRotator::ZeroRotator;
+	AFabricaNavesEnemigas* FNECaza = GetWorld() -> SpawnActor<AFNECaza> (AFNECaza::StaticClass(),SpawningLocation, SpawningRotation);
 	TiempoTranscurrido = 0;
 	}
 

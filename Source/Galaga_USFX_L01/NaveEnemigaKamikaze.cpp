@@ -13,7 +13,7 @@ ANaveEnemigaKamikaze::ANaveEnemigaKamikaze()
 	mallaNaveEnemiga->SetStaticMesh(ShipMesh.Object);
 	PrimaryActorTick.bCanEverTick = true;
 	MovimientoNaves = CreateDefaultSubobject<UMovimientoNaves>(TEXT("MovementComponent"));
-	
+	NaveName = "Kamikaze";
 }
 
 void ANaveEnemigaKamikaze::Mover(float DeltaTime)

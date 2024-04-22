@@ -73,7 +73,7 @@ public:
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
-
+	FString NaveName;
 public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
@@ -88,4 +88,5 @@ protected:
 	void CaidaLibre() PURE_VIRTUAL(ANaveEnemiga::CaidaLibre, );
 	void Desplegar() PURE_VIRTUAL(ANaveEnemiga::Desplegar, );
 	void DistribuirEnergia() PURE_VIRTUAL(ANaveEnemiga::DistribuirEnergia, );
+	FString GetNaveName();
 };
