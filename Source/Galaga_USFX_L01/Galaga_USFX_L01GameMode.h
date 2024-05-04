@@ -4,6 +4,8 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/GameModeBase.h"
+#include "ConcretoBuildCapsulas.h"
+#include "DirectorCapsulasEnergia.h"
 #include "Galaga_USFX_L01GameMode.generated.h"
 
 class ANaveEnemiga;
@@ -59,4 +61,13 @@ public:
 	TMap<int32, TArray<ACapsulaEnergia100pts*>> ColumnaCapsulasEnergia100pts;
 	TMap<int32, TArray<ACapsulaEnergia200pts*>> ColumnaCapsulasEnergia200pts;
 	TMap<int32, TArray<AMyAgujeroNegro*>> ColumnaAgujeroNegro;
+private:
+	int32 Cont;
+	float TimerController;
+
+	UPROPERTY(VisibleAnywhere, Category = "GameModeBase")
+	AConcretoBuildCapsulas* ConstructorPaquetesEnergia;
+
+	UPROPERTY(VisibleAnywhere, Category = "GameModeBase")
+	ADirectorCapsulasEnergia* Director;
  };

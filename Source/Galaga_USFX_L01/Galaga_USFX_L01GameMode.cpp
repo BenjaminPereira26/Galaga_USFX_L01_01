@@ -21,6 +21,8 @@ AGalaga_USFX_L01GameMode::AGalaga_USFX_L01GameMode()
 {
 	PrimaryActorTick.bCanEverTick = true;
 	DefaultPawnClass = AGalaga_USFX_L01Pawn::StaticClass();
+	Cont = 1;
+	TimerController = 0.0f;
 }
 
 void AGalaga_USFX_L01GameMode::BeginPlay()
@@ -214,6 +216,9 @@ void AGalaga_USFX_L01GameMode::BeginPlay()
 	AFabricaNavesEnemigas* FNEEspia = GetWorld()->SpawnActor<AFNEEspia>(AFNEEspia::StaticClass());
 	ANaveEnemiga* NaveEnemigaE = FNEEspia->OrderNave("Espia");
 	
+	ConstructorPaquetesEnergia = GetWorld()->SpawnActor<AConcretoBuildCapsulas>(AConcretoBuildCapsulas::StaticClass());
+	Director = GetWorld()->SpawnActor<ADirectorCapsulasEnergia>(ADirectorCapsulasEnergia::StaticClass());
+	Director->EstablecerConstructorPaquetes(ConstructorPaquetesEnergia);
 	TiempoTranscurrido = 0;
 	}
 
@@ -224,4 +229,16 @@ void AGalaga_USFX_L01GameMode::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 	TiempoTranscurrido++;
+	TimerController += DeltaTime;
+
+	if (TimerController >= 5.0f)
+	{
+		Director->ConstruirPaqueteEnergia(Cont);
+		TimerController = 0.0f;
+		Cont++;
+		if (Cont > 3)
+		{
+			Cont = 1;
+		}
+	}
 }
