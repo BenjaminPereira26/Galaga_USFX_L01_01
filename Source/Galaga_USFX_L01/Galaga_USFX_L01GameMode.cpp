@@ -220,6 +220,11 @@ void AGalaga_USFX_L01GameMode::BeginPlay()
 	Director = GetWorld()->SpawnActor<ADirectorCapsulasEnergia>(ADirectorCapsulasEnergia::StaticClass());
 	Director->EstablecerConstructorPaquetes(ConstructorPaquetesEnergia);
 	TiempoTranscurrido = 0;
+
+	ConstructorNodriza = GetWorld()->SpawnActor<AConcretoBuilderNodriza>(AConcretoBuilderNodriza::StaticClass());
+	DirectorN = GetWorld()->SpawnActor<ADirectorNodriza>(ADirectorNodriza::StaticClass());
+	DirectorN->EstablecerConstructorNodriza(ConstructorNodriza);
+	DirectorN->ConstruirNodriza();
 	}
 
 }

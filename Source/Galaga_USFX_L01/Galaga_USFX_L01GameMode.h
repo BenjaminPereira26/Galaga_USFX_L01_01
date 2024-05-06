@@ -6,6 +6,8 @@
 #include "GameFramework/GameModeBase.h"
 #include "ConcretoBuildCapsulas.h"
 #include "DirectorCapsulasEnergia.h"
+#include "ConcretoBuilderNodriza.h"
+#include "DirectorNodriza.h"
 #include "Galaga_USFX_L01GameMode.generated.h"
 
 class ANaveEnemiga;
@@ -70,4 +72,10 @@ private:
 
 	UPROPERTY(VisibleAnywhere, Category = "GameModeBase")
 	ADirectorCapsulasEnergia* Director;
+	
+	UPROPERTY(VisibleAnywhere, Category = "GameModeBase")
+	AConcretoBuilderNodriza* ConstructorNodriza;
+
+	UPROPERTY(VisibleAnywhere, Category = "GameModeBase")
+	ADirectorNodriza* DirectorN;
  };
