@@ -5,6 +5,9 @@
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
 #include "ISetPacketeCapsulas.h"
+#include "CapsulaEnergia50pts.h"
+#include "CapsulaEnergia100pts.h"
+#include "CapsulaEnergia200pts.h"
 #include "PacketeCapsulasEnergia.generated.h"
 
 UCLASS()
@@ -15,7 +18,10 @@ class GALAGA_USFX_L01_API APacketeCapsulasEnergia : public AActor, public IISetP
 public:	
 	// Sets default values for this actor's properties
 	APacketeCapsulasEnergia();
-
+protected:
+	ACapsulaEnergia50pts* CapsulaEnergia50pts;
+	ACapsulaEnergia100pts* CapsulaEnergia100pts;
+	ACapsulaEnergia200pts* CapsulaEnergia200pts;
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;

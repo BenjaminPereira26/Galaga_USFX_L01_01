@@ -21,7 +21,7 @@ void ACapsulaEnergia100pts::Mover(float DeltaTime)
 
 	if (NuevaPosicion.X < limiteX) {
 
-		SetActorLocation(FVector(1500.0f, FMath::RandRange(-500.0f, 200.0f) + 100.0f, PosicionActual.Z));
+		Destroy();
 
 	}
 }
