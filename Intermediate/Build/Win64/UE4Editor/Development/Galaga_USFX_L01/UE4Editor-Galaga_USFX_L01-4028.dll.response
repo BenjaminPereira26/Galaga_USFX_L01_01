@@ -67,7 +67,7 @@
 "setupapi.lib"
 "dwmapi.lib"
 "imm32.lib"
-/OUT:"C:\SIS457 LABS\Galaga_USFX_L01-master\Binaries\Win64\UE4Editor-Galaga_USFX_L01.dll"
-/IMPLIB:"C:\SIS457 LABS\Galaga_USFX_L01-master\Intermediate\Build\Win64\UE4Editor\Development\Galaga_USFX_L01\UE4Editor-Galaga_USFX_L01.suppressed.lib"
-/PDB:"C:\SIS457 LABS\Galaga_USFX_L01-master\Binaries\Win64\UE4Editor-Galaga_USFX_L01.pdb"
+/OUT:"C:\SIS457 LABS\Galaga_USFX_L01-master\Binaries\Win64\UE4Editor-Galaga_USFX_L01-4028.dll"
+/IMPLIB:"C:\SIS457 LABS\Galaga_USFX_L01-master\Intermediate\Build\Win64\UE4Editor\Development\Galaga_USFX_L01\UE4Editor-Galaga_USFX_L01-4028.suppressed.lib"
+/PDB:"C:\SIS457 LABS\Galaga_USFX_L01-master\Binaries\Win64\UE4Editor-Galaga_USFX_L01-4028.pdb"
 /ignore:4078

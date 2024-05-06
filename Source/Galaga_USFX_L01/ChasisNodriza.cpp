@@ -2,6 +2,7 @@
 
 
 #include "ChasisNodriza.h"
+#include "MovimientoNaves.h"
 
 AChasisNodriza::AChasisNodriza()
 {

@@ -2,6 +2,7 @@
 
 
 #include "MotorNodriza.h"
+#include "MovimientoNaves.h"
 
 AMotorNodriza::AMotorNodriza()
 {

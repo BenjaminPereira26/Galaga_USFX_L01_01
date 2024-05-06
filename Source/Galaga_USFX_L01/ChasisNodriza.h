@@ -15,4 +15,6 @@ class GALAGA_USFX_L01_API AChasisNodriza : public AChasis
 	GENERATED_BODY()
 public:
 	AChasisNodriza();
+	protected:
+		class UMovimientoNaves* MovimientoNaves;
 };

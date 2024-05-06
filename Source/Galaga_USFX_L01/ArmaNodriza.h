@@ -17,7 +17,7 @@ public:
 	AArmaNodriza();
 	virtual void Disparar();
 	float TimerDisparo;
-
+	class UMovimientoNaves* MovimientoNaves;
 public:
 	virtual void Tick(float DeltaTime) override;
 

@@ -15,4 +15,6 @@ class GALAGA_USFX_L01_API AMotorNodriza : public AMotor
 	GENERATED_BODY()
 public:
 	AMotorNodriza();
+protected:
+	class UMovimientoNaves* MovimientoNaves;
 };
