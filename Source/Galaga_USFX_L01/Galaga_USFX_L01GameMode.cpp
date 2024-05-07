@@ -21,7 +21,7 @@ AGalaga_USFX_L01GameMode::AGalaga_USFX_L01GameMode()
 {
 	PrimaryActorTick.bCanEverTick = true;
 	DefaultPawnClass = AGalaga_USFX_L01Pawn::StaticClass();
-	Cont = 1;
+	ContObs = 1;
 	TimerController = 0.0f;
 }
 
@@ -209,22 +209,26 @@ void AGalaga_USFX_L01GameMode::BeginPlay()
 		ColumnaAgujeroNegro.Add(Columna, AgujerosEnColumna);
 	}
 	
-	AFabricaNavesEnemigas* FNECaza = GetWorld() -> SpawnActor<AFNECaza> (AFNECaza::StaticClass());
+	/*AFabricaNavesEnemigas* FNECaza = GetWorld()->SpawnActor<AFNECaza>(AFNECaza::StaticClass());
 	ANaveEnemiga* NaveEnemigaC = FNECaza->OrderNave("Caza");
 	AFabricaNavesEnemigas* FNEKamikaze = GetWorld()->SpawnActor<AFNEKamikaze>(AFNEKamikaze::StaticClass());
 	ANaveEnemiga* NaveEnemigaK = FNEKamikaze->OrderNave("Kamikaze");
 	AFabricaNavesEnemigas* FNEEspia = GetWorld()->SpawnActor<AFNEEspia>(AFNEEspia::StaticClass());
-	ANaveEnemiga* NaveEnemigaE = FNEEspia->OrderNave("Espia");
+	ANaveEnemiga* NaveEnemigaE = FNEEspia->OrderNave("Espia");*/
 	
-	ConstructorPaquetesEnergia = GetWorld()->SpawnActor<AConcretoBuildCapsulas>(AConcretoBuildCapsulas::StaticClass());
+	/*ConstructorPaquetesEnergia = GetWorld()->SpawnActor<AConcretoBuildCapsulas>(AConcretoBuildCapsulas::StaticClass());
 	Director = GetWorld()->SpawnActor<ADirectorCapsulasEnergia>(ADirectorCapsulasEnergia::StaticClass());
-	Director->EstablecerConstructorPaquetes(ConstructorPaquetesEnergia);
+	Director->EstablecerConstructorPaquetes(ConstructorPaquetesEnergia);*/
 	TiempoTranscurrido = 0;
 
 	ConstructorNodriza = GetWorld()->SpawnActor<AConcretoBuilderNodriza>(AConcretoBuilderNodriza::StaticClass());
 	DirectorN = GetWorld()->SpawnActor<ADirectorNodriza>(ADirectorNodriza::StaticClass());
 	DirectorN->EstablecerConstructorNodriza(ConstructorNodriza);
 	DirectorN->ConstruirNodriza();
+
+	ConstructorObstaculos = GetWorld()->SpawnActor<AConcretoBuilderObstaculos>(AConcretoBuilderObstaculos::StaticClass());
+	Arqui = GetWorld()->SpawnActor<AArquitectoObstaculos>(AArquitectoObstaculos::StaticClass());
+	Arqui->EstablecerConstructorObstaculos(ConstructorObstaculos);
 	}
 
 }
@@ -236,7 +240,7 @@ void AGalaga_USFX_L01GameMode::Tick(float DeltaTime)
 	TiempoTranscurrido++;
 	TimerController += DeltaTime;
 
-	if (TimerController >= 5.0f)
+	/*if (TimerController >= 5.0f)
 	{
 		Director->ConstruirPaqueteEnergia(Cont);
 		TimerController = 0.0f;
@@ -245,5 +249,15 @@ void AGalaga_USFX_L01GameMode::Tick(float DeltaTime)
 		{
 			Cont = 1;
 		}
-	}
+	}*/
+	if (TimerController >= 10.0f)
+	{
+		Arqui->ConstruirObstaculos(ContObs);
+		TimerController = 0.0f;
+		ContObs++;
+		if (ContObs > 3)
+		{
+			ContObs = 1;
+		}
+}
 }

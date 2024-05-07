@@ -8,6 +8,8 @@
 #include "DirectorCapsulasEnergia.h"
 #include "ConcretoBuilderNodriza.h"
 #include "DirectorNodriza.h"
+#include "ConcretoBuilderObstaculos.h"
+#include "ArquitectoObstaculos.h"
 #include "Galaga_USFX_L01GameMode.generated.h"
 
 class ANaveEnemiga;
@@ -64,18 +66,24 @@ public:
 	TMap<int32, TArray<ACapsulaEnergia200pts*>> ColumnaCapsulasEnergia200pts;
 	TMap<int32, TArray<AMyAgujeroNegro*>> ColumnaAgujeroNegro;
 private:
-	int32 Cont;
+	int32 ContObs;
 	float TimerController;
 
-	UPROPERTY(VisibleAnywhere, Category = "GameModeBase")
+	/*UPROPERTY(VisibleAnywhere, Category = "GameModeBase")
 	AConcretoBuildCapsulas* ConstructorPaquetesEnergia;
 
 	UPROPERTY(VisibleAnywhere, Category = "GameModeBase")
-	ADirectorCapsulasEnergia* Director;
+	ADirectorCapsulasEnergia* Director;*/
 	
 	UPROPERTY(VisibleAnywhere, Category = "GameModeBase")
 	AConcretoBuilderNodriza* ConstructorNodriza;
 
 	UPROPERTY(VisibleAnywhere, Category = "GameModeBase")
 	ADirectorNodriza* DirectorN;
+
+	UPROPERTY(VisibleAnywhere, Category = "GameModeBase")
+	AConcretoBuilderObstaculos* ConstructorObstaculos;
+
+	UPROPERTY(VisibleAnywhere, Category = "GameModeBase")
+	AArquitectoObstaculos* Arqui;
  };

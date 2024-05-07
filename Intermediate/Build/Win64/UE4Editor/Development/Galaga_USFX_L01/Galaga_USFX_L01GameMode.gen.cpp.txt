@@ -18,4 +18,10 @@ C:\SIS457 LABS\Galaga_USFX_L01-master\Intermediate\Build\Win64\UE4Editor\Inc\Gal
 C:\SIS457 LABS\Galaga_USFX_L01-master\Intermediate\Build\Win64\UE4Editor\Inc\Galaga_USFX_L01\ConcretoBuilderNodriza.generated.h
 C:\SIS457 LABS\Galaga_USFX_L01-master\Source\Galaga_USFX_L01\DirectorNodriza.h
 C:\SIS457 LABS\Galaga_USFX_L01-master\Intermediate\Build\Win64\UE4Editor\Inc\Galaga_USFX_L01\DirectorNodriza.generated.h
+C:\SIS457 LABS\Galaga_USFX_L01-master\Source\Galaga_USFX_L01\ConcretoBuilderObstaculos.h
+C:\SIS457 LABS\Galaga_USFX_L01-master\Source\Galaga_USFX_L01\IBuilderObstaculos.h
+C:\SIS457 LABS\Galaga_USFX_L01-master\Intermediate\Build\Win64\UE4Editor\Inc\Galaga_USFX_L01\IBuilderObstaculos.generated.h
+C:\SIS457 LABS\Galaga_USFX_L01-master\Intermediate\Build\Win64\UE4Editor\Inc\Galaga_USFX_L01\ConcretoBuilderObstaculos.generated.h
+C:\SIS457 LABS\Galaga_USFX_L01-master\Source\Galaga_USFX_L01\ArquitectoObstaculos.h
+C:\SIS457 LABS\Galaga_USFX_L01-master\Intermediate\Build\Win64\UE4Editor\Inc\Galaga_USFX_L01\ArquitectoObstaculos.generated.h
 C:\SIS457 LABS\Galaga_USFX_L01-master\Intermediate\Build\Win64\UE4Editor\Inc\Galaga_USFX_L01\Galaga_USFX_L01GameMode.generated.h
