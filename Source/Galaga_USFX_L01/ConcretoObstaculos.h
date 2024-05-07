@@ -6,6 +6,10 @@
 #include "GameFramework/Actor.h"
 #include "ISetObstaculos.h"
 #include "ObstaculoDerIzN1.h"
+#include "ObstaculoIzDerN1.h"
+#include "ObstaculoArrAbjN2.h"
+#include "ObstaculoAbjArrN3.h"
+
 #include "ConcretoObstaculos.generated.h"
 
 UCLASS()

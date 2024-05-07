@@ -13,5 +13,15 @@ UCLASS()
 class GALAGA_USFX_L01_API AObstaculoArrAbjN2 : public AObstaculos
 {
 	GENERATED_BODY()
-	
+public:
+	AObstaculoArrAbjN2();
+private:
+	float velocidad;
+	float TimerDestruir;
+protected:
+	virtual void MoverArAb(float DeltaTime);
+	virtual void Destruir();
+
+public:
+	virtual void Tick(float DeltaTime) override;
 };
