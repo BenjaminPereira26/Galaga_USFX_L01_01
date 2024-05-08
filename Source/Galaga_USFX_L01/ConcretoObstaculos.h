@@ -9,6 +9,7 @@
 #include "ObstaculoIzDerN1.h"
 #include "ObstaculoArrAbjN2.h"
 #include "ObstaculoAbjArrN3.h"
+#include "Arma.h"
 
 #include "ConcretoObstaculos.generated.h"
 
@@ -20,7 +21,11 @@ class GALAGA_USFX_L01_API AConcretoObstaculos : public AActor, public IISetObsta
 public:	
 	// Sets default values for this actor's properties
 	AConcretoObstaculos();
-
+public:
+	TArray<AObstaculoDerIzN1*> TAODIN1;
+	TArray<AObstaculoIzDerN1*> TAOIDN1;
+	TArray<AObstaculoArrAbjN2*> TAOArAbN2;
+	TArray<AObstaculoAbjArrN3*> TAOAbArN3;
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;

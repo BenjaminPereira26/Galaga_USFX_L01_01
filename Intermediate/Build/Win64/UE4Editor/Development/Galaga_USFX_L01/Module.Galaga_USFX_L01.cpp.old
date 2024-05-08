@@ -58,7 +58,6 @@
 #include "C:/SIS457 LABS/Galaga_USFX_L01-master/Source/Galaga_USFX_L01/NaveEnemigaTransporte.cpp"
 #include "C:/SIS457 LABS/Galaga_USFX_L01-master/Source/Galaga_USFX_L01/NaveEnemigaTransporteNieta01.cpp"
 #include "C:/SIS457 LABS/Galaga_USFX_L01-master/Source/Galaga_USFX_L01/NaveEnemigaTransporteNieta02.cpp"
-#include "C:/SIS457 LABS/Galaga_USFX_L01-master/Source/Galaga_USFX_L01/ObstaculoAbjArrN3.cpp"
 #include "C:/SIS457 LABS/Galaga_USFX_L01-master/Source/Galaga_USFX_L01/ObstaculoDerIzN1.cpp"
 #include "C:/SIS457 LABS/Galaga_USFX_L01-master/Source/Galaga_USFX_L01/Obstaculos.cpp"
 #include "C:/SIS457 LABS/Galaga_USFX_L01-master/Source/Galaga_USFX_L01/PacketeCapsulasEnergia.cpp"

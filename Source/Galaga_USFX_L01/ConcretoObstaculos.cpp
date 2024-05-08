@@ -28,34 +28,47 @@ void AConcretoObstaculos::Tick(float DeltaTime)
 void AConcretoObstaculos::SetNivel1()
 {
 	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Green, FString::Printf(TEXT("Nivel 1")), true, FVector2D(1.5f, 1.5f));
-	FVector SpawningLocationDI1 = FVector(-600.0f, 0.0f, 250.0f);
-	FRotator SpawningRotationDI1 = FRotator::ZeroRotator;
-	GetWorld()->SpawnActor<AObstaculoDerIzN1>(AObstaculoDerIzN1::StaticClass(), SpawningLocationDI1, SpawningRotationDI1);
-	FVector SpawningLocationID1 = FVector(-600.0f, 0.0f, 250.0f);
-	FRotator SpawningRotationID1 = FRotator::ZeroRotator;
-	GetWorld()->SpawnActor<AObstaculoIzDerN1>(AObstaculoIzDerN1::StaticClass(), SpawningLocationID1, SpawningRotationID1);
+
+	UWorld* const World = GetWorld();
+	for (int i = 0; i < 2; i++) {
+		FVector PosicionNaveActual = FVector(-600.0f, 0.0f + i * 200.0f, 250.0f);
+		AObstaculoDerIzN1* ObsT1 = World->SpawnActor<AObstaculoDerIzN1>(PosicionNaveActual, FRotator::ZeroRotator);
+
+		
+		TAODIN1.Push(ObsT1);
+	}
+	for (int i = 0; i < 2; i++) {
+		FVector PosicionNaveActual = FVector(-600.0f, 0.0f - i * 200.0f, 250.0f);
+		AObstaculoIzDerN1* ObsT2 = World->SpawnActor<AObstaculoIzDerN1>(PosicionNaveActual, FRotator::ZeroRotator);
+
+		TAOIDN1.Push(ObsT2);
+	}
+
 }
 
 void AConcretoObstaculos::SetNivel2()
 {
 	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Yellow, FString::Printf(TEXT("Nivel 2")), true, FVector2D(1.5f, 1.5f));
-	FVector SpawningLocationArrA2 = FVector(-800.0f, 0.0f, 250.0f);
-	FRotator SpawningRotationArrA2 = FRotator::ZeroRotator;
-	GetWorld()->SpawnActor<AObstaculoArrAbjN2>(AObstaculoArrAbjN2::StaticClass(), SpawningLocationArrA2, SpawningRotationArrA2);
+	
+	UWorld* const World = GetWorld();
+	for (int i = 0; i < 3; i++) {
+		FVector PosicionNaveActual = FVector(-800.0f, -300.0f + i * 300.0f, 250.0f);
+		AObstaculoArrAbjN2* ObsT3 = World->SpawnActor<AObstaculoArrAbjN2>(PosicionNaveActual, FRotator::ZeroRotator);
+
+		TAOArAbN2.Push(ObsT3);
+	}
 }
 
 void AConcretoObstaculos::SetNivel3()
 {
 	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, FString::Printf(TEXT("Nivel 3")), true, FVector2D(1.5f, 1.5f));
-	FVector SpawningLocationAArr3 = FVector(-1000.0f, 0.0f, 250.0f);
-	FRotator SpawningRotationAArr3 = FRotator::ZeroRotator;
-	GetWorld()->SpawnActor<AObstaculoAbjArrN3>(AObstaculoAbjArrN3::StaticClass(), SpawningLocationAArr3, SpawningRotationAArr3);
-	FVector SpawningLocationAArr31 = FVector(-1000.0f, 500.0f, 250.0f);
-	FRotator SpawningRotationAArr31 = FRotator::ZeroRotator;
-	GetWorld()->SpawnActor<AObstaculoAbjArrN3>(AObstaculoAbjArrN3::StaticClass(), SpawningLocationAArr31, SpawningRotationAArr31);
-	FVector SpawningLocationAArr32 = FVector(-1000.0f, -500.0f, 250.0f);
-	FRotator SpawningRotationAArr32 = FRotator::ZeroRotator;
-	GetWorld()->SpawnActor<AObstaculoAbjArrN3>(AObstaculoAbjArrN3::StaticClass(), SpawningLocationAArr32, SpawningRotationAArr32);
+	
+	UWorld* const World = GetWorld();
+	for (int i = 0; i < 3; i++) {
+		FVector PosicionNaveActual = FVector(-1000.0f, -500.0f + i * 500.0f, 250.0f);
+		AObstaculoAbjArrN3* ObsT4 = World->SpawnActor<AObstaculoAbjArrN3>(PosicionNaveActual, FRotator::ZeroRotator);
 
+		TAOAbArN3.Push(ObsT4);
+	}
 }
 
