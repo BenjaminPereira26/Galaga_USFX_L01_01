@@ -50,7 +50,19 @@ void AArquitectoObstaculos::ConstruirObstaculos(int32 _ContObs)
 	}
 	else
 	{
-		GEngine->AddOnScreenDebugMessage(-1, 15.f, FColor::Red, FString::Printf(TEXT("Error al seleccionar el paquete de energia")));
+		GEngine->AddOnScreenDebugMessage(-1, 15.f, FColor::Red, FString::Printf(TEXT("Error al seleccionar nivel")));
 	}
+}
+
+AConcretoObstaculos* AArquitectoObstaculos::GetObstaculos()
+{
+	if (BO)
+	{
+		//Returns the Lodging of the Builder
+		return BO->GetObstaculos();
+	}
+	//Log if the Builder is NULL
+	UE_LOG(LogTemp, Error, TEXT("Return nullptr"));
+	return nullptr;
 }
 

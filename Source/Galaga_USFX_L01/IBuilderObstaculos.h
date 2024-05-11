@@ -25,4 +25,5 @@ public:
 	virtual void BuildNivel1() = 0;
 	virtual void BuildNivel2() = 0;
 	virtual void BuildNivel3() = 0;
+	virtual class AConcretoObstaculos* GetObstaculos() = 0;
 };

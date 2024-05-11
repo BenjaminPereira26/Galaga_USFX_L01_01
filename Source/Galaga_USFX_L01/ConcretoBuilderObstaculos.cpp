@@ -42,3 +42,8 @@ void AConcretoBuilderObstaculos::BuildNivel3()
 	Obstaculo->SetNivel3();
 }
 
+AConcretoObstaculos* AConcretoBuilderObstaculos::GetObstaculos()
+{
+	return Obstaculo;
+}
+

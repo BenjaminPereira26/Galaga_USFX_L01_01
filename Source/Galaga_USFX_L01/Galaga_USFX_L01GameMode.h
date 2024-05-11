@@ -47,6 +47,11 @@ public:
 	TArray<ACapsulaEnergia100pts*> TACapsulasEnergia100pts;
 	TArray<ACapsulaEnergia200pts*> TACapsulasEnergia200pts;
 	TArray<AMyAgujeroNegro*> TAgujeroNegro;
+protected:
+	UPROPERTY(VisibleAnywhere, Category = "GameModeBase")
+	class AGalaga_USFX_L01Pawn* GalagaPawn;
+	UPROPERTY(VisibleAnywhere, Category = "GameModeBase")
+	class AExplosiveAdapter* Adaptador;
 private:
 	int TiempoTranscurrido;
 
@@ -65,6 +70,8 @@ public:
 	TMap<int32, TArray<ACapsulaEnergia100pts*>> ColumnaCapsulasEnergia100pts;
 	TMap<int32, TArray<ACapsulaEnergia200pts*>> ColumnaCapsulasEnergia200pts;
 	TMap<int32, TArray<AMyAgujeroNegro*>> ColumnaAgujeroNegro;
+public:
+	float TimerShot;
 private:
 	int32 ContObs;
 	float TimerController;

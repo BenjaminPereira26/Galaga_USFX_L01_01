@@ -72,3 +72,10 @@ void AConcretoObstaculos::SetNivel3()
 	}
 }
 
+void AConcretoObstaculos::ObstaculosCharacteristics()
+{
+	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Green, FString::Printf(TEXT("Nivel 1")), true, FVector2D(1.5f, 1.5f));
+	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Yellow, FString::Printf(TEXT("Nivel 2")), true, FVector2D(1.5f, 1.5f));
+	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, FString::Printf(TEXT("Nivel 3")), true, FVector2D(1.5f, 1.5f));
+}
+

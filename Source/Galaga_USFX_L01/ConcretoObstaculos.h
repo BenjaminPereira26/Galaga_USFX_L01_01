@@ -9,8 +9,6 @@
 #include "ObstaculoIzDerN1.h"
 #include "ObstaculoArrAbjN2.h"
 #include "ObstaculoAbjArrN3.h"
-#include "Arma.h"
-
 #include "ConcretoObstaculos.generated.h"
 
 UCLASS()
@@ -37,4 +35,5 @@ public:
 	virtual void SetNivel1() override;
 	virtual void SetNivel2() override;
 	virtual void SetNivel3() override;
+	void ObstaculosCharacteristics();
 };

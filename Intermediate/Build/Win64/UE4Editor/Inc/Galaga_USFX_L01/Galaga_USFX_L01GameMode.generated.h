@@ -59,6 +59,8 @@ public: \
 
 
 #define Galaga_USFX_L01_master_Source_Galaga_USFX_L01_Galaga_USFX_L01GameMode_h_29_PRIVATE_PROPERTY_OFFSET \
+	FORCEINLINE static uint32 __PPO__GalagaPawn() { return STRUCT_OFFSET(AGalaga_USFX_L01GameMode, GalagaPawn); } \
+	FORCEINLINE static uint32 __PPO__Adaptador() { return STRUCT_OFFSET(AGalaga_USFX_L01GameMode, Adaptador); } \
 	FORCEINLINE static uint32 __PPO__ConstructorNodriza() { return STRUCT_OFFSET(AGalaga_USFX_L01GameMode, ConstructorNodriza); } \
 	FORCEINLINE static uint32 __PPO__DirectorN() { return STRUCT_OFFSET(AGalaga_USFX_L01GameMode, DirectorN); } \
 	FORCEINLINE static uint32 __PPO__ConstructorObstaculos() { return STRUCT_OFFSET(AGalaga_USFX_L01GameMode, ConstructorObstaculos); } \

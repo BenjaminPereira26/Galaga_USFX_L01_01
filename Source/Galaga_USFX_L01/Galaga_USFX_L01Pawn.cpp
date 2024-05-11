@@ -13,6 +13,7 @@
 #include "Kismet/GameplayStatics.h"
 #include "Sound/SoundBase.h"
 #include "MyAgujeroNegro.h"
+#include "ExplosiveAdapter.h"
 #include "Galaga_USFX_L01GameMode.h"
 
 const FName AGalaga_USFX_L01Pawn::MoveForwardBinding("MoveForward");
@@ -51,6 +52,7 @@ AGalaga_USFX_L01Pawn::AGalaga_USFX_L01Pawn()
 	// Weapon
 	GunOffset = FVector(90.f, 0.f, 0.f);
 	FireRate = 0.1f;
+	range = 0.0f;
 	bCanFire = true;
 	/*Barreras = CreateDefaultSubobject<UBarreras>(TEXT("MovementComponent"));*/
 }
@@ -164,6 +166,27 @@ FVector AGalaga_USFX_L01Pawn::ObtenerUbicacionObjetoQueSemueve()
 		return ObjetoQueSemueve->GetActorLocation();
 	}
 	return FVector::ZeroVector;
+}
+
+void AGalaga_USFX_L01Pawn::SetExplosiveCanion(AActor* _Adaptador)
+{
+	ES = Cast<IIExplosiveShot>(_Adaptador);
+	if (!ES)
+	{
+		GEngine->AddOnScreenDebugMessage(-1, 15.f, FColor::Red, FString::Printf(TEXT("No se pudo castear IExplosiveShot")));
+	}
+	return;
+}
+
+void AGalaga_USFX_L01Pawn::explosive()
+{
+	ES->explosive();
+}
+
+void AGalaga_USFX_L01Pawn::range_explosive(float _range)
+{
+	range=_range;
+	ES->range_explosive(range);
 }
 
 

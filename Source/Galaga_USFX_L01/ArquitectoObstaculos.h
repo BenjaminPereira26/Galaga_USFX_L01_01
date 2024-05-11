@@ -27,4 +27,5 @@ public:
 public:
 	void EstablecerConstructorObstaculos(AActor* _ConstructorObs);
 	void ConstruirObstaculos(int32 _ContObs);
+	class AConcretoObstaculos* GetObstaculos();
 };

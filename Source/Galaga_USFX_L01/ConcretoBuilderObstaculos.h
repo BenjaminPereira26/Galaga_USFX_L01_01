@@ -29,4 +29,5 @@ public:
 	virtual void BuildNivel1() override;
 	virtual void BuildNivel2() override;
 	virtual void BuildNivel3() override;
+	virtual class AConcretoObstaculos* GetObstaculos() override;
 };

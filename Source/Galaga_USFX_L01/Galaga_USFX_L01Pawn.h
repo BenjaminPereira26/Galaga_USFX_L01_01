@@ -5,10 +5,11 @@
 #include "CoreMinimal.h"
 #include "GameFramework/Character.h"
 #include "MyAgujeroNegro.h"
+#include "IExplosiveShot.h"
 #include "Galaga_USFX_L01Pawn.generated.h"
 
 UCLASS(Blueprintable)
-class AGalaga_USFX_L01Pawn : public APawn
+class AGalaga_USFX_L01Pawn : public APawn, public IIExplosiveShot
 {
 	GENERATED_BODY()
 
@@ -80,6 +81,15 @@ public:
 	FORCEINLINE class UCameraComponent* GetCameraComponent() const { return CameraComponent; }
 	/** Returns CameraBoom subobject **/
 	FORCEINLINE class USpringArmComponent* GetCameraBoom() const { return CameraBoom; }
-
+protected:
+	//el arma adaptada debe ser del tipo IExplosiveShot
+	class IIExplosiveShot* ES;
+private:
+	float range;
+public:
+	void SetExplosiveCanion(AActor* _Adaptador) ;
+	//establecemos el disparo y rango
+	void explosive() override;
+	void range_explosive(float _range) override;
 };
 

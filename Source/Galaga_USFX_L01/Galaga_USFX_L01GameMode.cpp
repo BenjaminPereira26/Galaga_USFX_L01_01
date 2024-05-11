@@ -14,6 +14,7 @@
 #include "CapsulaEnergia200pts.h"
 #include "MyAgujeroNegro.h"
 #include "FNECaza.h"
+#include "ExplosiveAdapter.h"
 #include "FNEKamikaze.h"
 #include "FNEEspia.h"
 
@@ -229,6 +230,11 @@ void AGalaga_USFX_L01GameMode::BeginPlay()
 	ConstructorObstaculos = GetWorld()->SpawnActor<AConcretoBuilderObstaculos>(AConcretoBuilderObstaculos::StaticClass());
 	Arqui = GetWorld()->SpawnActor<AArquitectoObstaculos>(AArquitectoObstaculos::StaticClass());
 	Arqui->EstablecerConstructorObstaculos(ConstructorObstaculos);
+	AConcretoObstaculos* Obstaculos = Arqui->GetObstaculos();
+	Adaptador= GetWorld()->SpawnActor<AExplosiveAdapter>(AExplosiveAdapter::StaticClass());
+	GalagaPawn = GetWorld()->SpawnActor<AGalaga_USFX_L01Pawn>(AGalaga_USFX_L01Pawn::StaticClass());
+	GalagaPawn->SetExplosiveCanion(Adaptador);
+
 	}
 
 }
@@ -239,25 +245,23 @@ void AGalaga_USFX_L01GameMode::Tick(float DeltaTime)
 	Super::Tick(DeltaTime);
 	TiempoTranscurrido++;
 	TimerController += DeltaTime;
+	TimerShot += DeltaTime;
+	if (TimerShot >= 5.0f)
+	{
+		Adaptador->explosive();
+		Adaptador->range_explosive(15.0f);
+		if (TimerController >= 10.0f)
+		{
+			Arqui->ConstruirObstaculos(ContObs);
+			TimerController = 0.0f;
+			ContObs++;
+			if (ContObs > 3)
+			{
+				ContObs = 1;
+			}
 
-	/*if (TimerController >= 5.0f)
-	{
-		Director->ConstruirPaqueteEnergia(Cont);
-		TimerController = 0.0f;
-		Cont++;
-		if (Cont > 3)
-		{
-			Cont = 1;
 		}
-	}*/
-	if (TimerController >= 10.0f)
-	{
-		Arqui->ConstruirObstaculos(ContObs);
-		TimerController = 0.0f;
-		ContObs++;
-		if (ContObs > 3)
-		{
-			ContObs = 1;
-		}
-}
+		TimerShot = 0.0f;
+	}
+	
 }
