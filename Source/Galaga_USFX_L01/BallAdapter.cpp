@@ -16,7 +16,7 @@ ABallAdapter::ABallAdapter()
 void ABallAdapter::BeginPlay()
 {
 	Super::BeginPlay();
-	ball = GetWorld()->SpawnActor<ABall>(ABall::StaticClass(), FVector(-770, 10, 180), FRotator::ZeroRotator);
+	ball = GetWorld()->SpawnActor<ABall>(ABall::StaticClass(), FVector(-770, -100, 180), FRotator::ZeroRotator);
 }
 
 // Called every frame

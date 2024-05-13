@@ -23,7 +23,7 @@ void EmptyLinkFunctionForGeneratedCodeGalaga_USFX_L01Pawn() {}
 	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FVector();
 	ENGINE_API UClass* Z_Construct_UClass_USoundBase_NoRegister();
 	GALAGA_USFX_L01_API UClass* Z_Construct_UClass_AMyAgujeroNegro_NoRegister();
-	GALAGA_USFX_L01_API UClass* Z_Construct_UClass_UIExplosiveShot_NoRegister();
+	GALAGA_USFX_L01_API UClass* Z_Construct_UClass_UIBounceBall_NoRegister();
 // End Cross Module References
 	void AGalaga_USFX_L01Pawn::StaticRegisterNativesAGalaga_USFX_L01Pawn()
 	{
@@ -175,7 +175,7 @@ void EmptyLinkFunctionForGeneratedCodeGalaga_USFX_L01Pawn() {}
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AGalaga_USFX_L01Pawn_Statics::NewProp_ObjetoQueSemueve,
 	};
 		const UE4CodeGen_Private::FImplementedInterfaceParams Z_Construct_UClass_AGalaga_USFX_L01Pawn_Statics::InterfaceParams[] = {
-			{ Z_Construct_UClass_UIExplosiveShot_NoRegister, (int32)VTABLE_OFFSET(AGalaga_USFX_L01Pawn, IIExplosiveShot), false },
+			{ Z_Construct_UClass_UIBounceBall_NoRegister, (int32)VTABLE_OFFSET(AGalaga_USFX_L01Pawn, IIBounceBall), false },
 		};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AGalaga_USFX_L01Pawn_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AGalaga_USFX_L01Pawn>::IsAbstract,
@@ -204,7 +204,7 @@ void EmptyLinkFunctionForGeneratedCodeGalaga_USFX_L01Pawn() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AGalaga_USFX_L01Pawn, 4028125485);
+	IMPLEMENT_CLASS(AGalaga_USFX_L01Pawn, 165043656);
 	template<> GALAGA_USFX_L01_API UClass* StaticClass<AGalaga_USFX_L01Pawn>()
 	{
 		return AGalaga_USFX_L01Pawn::StaticClass();

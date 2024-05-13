@@ -168,25 +168,20 @@ FVector AGalaga_USFX_L01Pawn::ObtenerUbicacionObjetoQueSemueve()
 	return FVector::ZeroVector;
 }
 
-void AGalaga_USFX_L01Pawn::SetExplosiveCanion(AActor* _Adaptador)
+
+
+void AGalaga_USFX_L01Pawn::SetBounceBall(AActor* _Adaptador)
 {
-	ES = Cast<IIExplosiveShot>(_Adaptador);
-	if (!ES)
-	{
-		GEngine->AddOnScreenDebugMessage(-1, 15.f, FColor::Red, FString::Printf(TEXT("No se pudo castear IExplosiveShot")));
+	BounceBall = Cast<IIBounceBall>(_Adaptador);
+	if (!BounceBall) {
+		GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Red, FString::Printf(TEXT("No se pudo realizar el casteo")));
+		return;
 	}
-	return;
 }
 
-void AGalaga_USFX_L01Pawn::explosive()
+void AGalaga_USFX_L01Pawn::lanzar()
 {
-	ES->explosive();
-}
-
-void AGalaga_USFX_L01Pawn::range_explosive(float _range)
-{
-	range=_range;
-	ES->range_explosive(range);
+		BounceBall->lanzar();
 }
 
 

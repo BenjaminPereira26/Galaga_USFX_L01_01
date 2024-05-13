@@ -17,6 +17,8 @@
 #include "ExplosiveAdapter.h"
 #include "FNEKamikaze.h"
 #include "FNEEspia.h"
+#include "Kismet/GameplayStatics.h"
+#include "BallAdapter.h"
 
 AGalaga_USFX_L01GameMode::AGalaga_USFX_L01GameMode()
 {
@@ -231,9 +233,12 @@ void AGalaga_USFX_L01GameMode::BeginPlay()
 	Arqui = GetWorld()->SpawnActor<AArquitectoObstaculos>(AArquitectoObstaculos::StaticClass());
 	Arqui->EstablecerConstructorObstaculos(ConstructorObstaculos);
 	AConcretoObstaculos* Obstaculos = Arqui->GetObstaculos();
-	Adaptador= GetWorld()->SpawnActor<AExplosiveAdapter>(AExplosiveAdapter::StaticClass());
-	GalagaPawn = GetWorld()->SpawnActor<AGalaga_USFX_L01Pawn>(AGalaga_USFX_L01Pawn::StaticClass());
-	GalagaPawn->SetExplosiveCanion(Adaptador);
+
+
+	Jugador = Cast<AGalaga_USFX_L01Pawn>(UGameplayStatics::GetPlayerPawn(GetWorld(), 0));
+	AdaptadorB = GetWorld()->SpawnActor<ABallAdapter>(ABallAdapter::StaticClass(), FVector(0, 0, 0), FRotator::ZeroRotator);
+	Jugador->SetBounceBall(AdaptadorB);
+	Jugador->lanzar();
 
 	}
 
@@ -246,22 +251,15 @@ void AGalaga_USFX_L01GameMode::Tick(float DeltaTime)
 	TiempoTranscurrido++;
 	TimerController += DeltaTime;
 	TimerShot += DeltaTime;
-	if (TimerShot >= 5.0f)
-	{
-		Adaptador->explosive();
-		Adaptador->range_explosive(15.0f);
-		if (TimerController >= 10.0f)
-		{
-			Arqui->ConstruirObstaculos(ContObs);
-			TimerController = 0.0f;
-			ContObs++;
-			if (ContObs > 3)
-			{
-				ContObs = 1;
-			}
-
-		}
-		TimerShot = 0.0f;
-	}
 	
+	if (TimerController >= 10.0f)
+	{
+		Arqui->ConstruirObstaculos(ContObs);
+		TimerController = 0.0f;
+		ContObs++;
+		if (ContObs > 3)
+		{
+			ContObs = 1;
+		}
+	}
 }

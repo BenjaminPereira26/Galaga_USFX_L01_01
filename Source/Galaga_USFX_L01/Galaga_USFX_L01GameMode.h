@@ -47,11 +47,7 @@ public:
 	TArray<ACapsulaEnergia100pts*> TACapsulasEnergia100pts;
 	TArray<ACapsulaEnergia200pts*> TACapsulasEnergia200pts;
 	TArray<AMyAgujeroNegro*> TAgujeroNegro;
-protected:
-	UPROPERTY(VisibleAnywhere, Category = "GameModeBase")
-	class AGalaga_USFX_L01Pawn* GalagaPawn;
-	UPROPERTY(VisibleAnywhere, Category = "GameModeBase")
-	class AExplosiveAdapter* Adaptador;
+
 private:
 	int TiempoTranscurrido;
 
@@ -93,4 +89,10 @@ private:
 
 	UPROPERTY(VisibleAnywhere, Category = "GameModeBase")
 	AArquitectoObstaculos* Arqui;
+public:
+	UPROPERTY(VisibleAnywhere, Category = "Game mode")
+	class AGalaga_USFX_L01Pawn* Jugador;
+
+	UPROPERTY(VisibleAnywhere, Category = "Game mode")
+	class ABallAdapter* AdaptadorB;
  };
