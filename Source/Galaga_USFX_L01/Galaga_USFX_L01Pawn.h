@@ -6,10 +6,11 @@
 #include "GameFramework/Character.h"
 #include "MyAgujeroNegro.h"
 #include "IExplosiveShot.h"
+#include "IBounceBall.h"
 #include "Galaga_USFX_L01Pawn.generated.h"
 
 UCLASS(Blueprintable)
-class AGalaga_USFX_L01Pawn : public APawn, public IIExplosiveShot
+class AGalaga_USFX_L01Pawn : public APawn, public IIExplosiveShot, public IIBounceBall
 {
 	GENERATED_BODY()
 
