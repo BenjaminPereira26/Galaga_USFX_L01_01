@@ -5,7 +5,6 @@
 #include "C:/SIS457 LABS/Galaga_USFX_L01-master/Source/Galaga_USFX_L01/ArquitectoObstaculos.cpp"
 #include "C:/SIS457 LABS/Galaga_USFX_L01-master/Source/Galaga_USFX_L01/BalaCanion.cpp"
 #include "C:/SIS457 LABS/Galaga_USFX_L01-master/Source/Galaga_USFX_L01/Ball.cpp"
-#include "C:/SIS457 LABS/Galaga_USFX_L01-master/Source/Galaga_USFX_L01/BallAdapter.cpp"
 #include "C:/SIS457 LABS/Galaga_USFX_L01-master/Source/Galaga_USFX_L01/Barrera.cpp"
 #include "C:/SIS457 LABS/Galaga_USFX_L01-master/Source/Galaga_USFX_L01/Barreras.cpp"
 #include "C:/SIS457 LABS/Galaga_USFX_L01-master/Source/Galaga_USFX_L01/CapsulaEnergia.cpp"
