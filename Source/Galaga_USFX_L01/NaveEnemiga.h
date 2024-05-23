@@ -89,4 +89,14 @@ protected:
 	void Desplegar() PURE_VIRTUAL(ANaveEnemiga::Desplegar, );
 	void DistribuirEnergia() PURE_VIRTUAL(ANaveEnemiga::DistribuirEnergia, );
 	FString GetNaveName();
+
+public:
+	/*void SpawneoNECaza();
+	void SpawneoNEEspia();
+	void SpawneoNEKamikaze();
+	void SpawneoNENodriza();
+	void SpawneoNEReabastecimiento();
+	void SpawneoNETransporte();
+	void ListaSpawnNE(const TArray<FString>& _ListaSapwnNE);
+	void ValidarSpawnNE(const FString& ListaSpawnNE);*/
 };

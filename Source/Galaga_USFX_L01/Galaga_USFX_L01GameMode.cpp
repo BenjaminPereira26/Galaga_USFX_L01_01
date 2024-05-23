@@ -35,7 +35,7 @@ void AGalaga_USFX_L01GameMode::BeginPlay()
 	if (World != nullptr)
 	{
 		
-	const int32 NumeroDeColumnasReabasteimiento = 1;
+	/*const int32 NumeroDeColumnasReabasteimiento = 1;
 	const int32 NumeroDeFilasReabastecimiento = 5;
 
 	for (int32 Columna = 0; Columna < NumeroDeColumnasReabasteimiento; ++Columna)
@@ -159,7 +159,7 @@ void AGalaga_USFX_L01GameMode::BeginPlay()
 			AgujerosEnColumna.Add(NuevoAN);
 		}
 		ColumnaAgujeroNegro.Add(Columna, AgujerosEnColumna);
-	}
+	}*/
 	
 	/*AFabricaNavesEnemigas* FNECaza = GetWorld()->SpawnActor<AFNECaza>(AFNECaza::StaticClass());
 	ANaveEnemiga* NaveEnemigaC = FNECaza->OrderNave("Caza");
