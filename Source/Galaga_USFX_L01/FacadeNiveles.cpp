@@ -2,7 +2,7 @@
 
 
 #include "FacadeNiveles.h"
-
+#include "FacadeNaveEnemigas.h"
 // Sets default values
 AFacadeNiveles::AFacadeNiveles()
 {
@@ -15,7 +15,8 @@ AFacadeNiveles::AFacadeNiveles()
 void AFacadeNiveles::BeginPlay()
 {
 	Super::BeginPlay();
-	
+	FacadeNE = GetWorld()->SpawnActor<AFacadeNaveEnemigas>(AFacadeNaveEnemigas::StaticClass());
+
 }
 
 // Called every frame
@@ -23,5 +24,23 @@ void AFacadeNiveles::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
+}
+
+void AFacadeNiveles::setNENivel1()
+{
+	FacadeNE->setFlotaNETransporte();
+	FacadeNE->setFlotaNEReabastecimiento();
+}
+
+void AFacadeNiveles::setNENivel2()
+{
+	FacadeNE->setFlotaNEEspia();
+	FacadeNE->setFlotaNENodriza();
+}
+
+void AFacadeNiveles::setNENivel3()
+{
+	FacadeNE->setFlotaNECaza();
+	FacadeNE->setFlotaNEKamikaze();
 }
 

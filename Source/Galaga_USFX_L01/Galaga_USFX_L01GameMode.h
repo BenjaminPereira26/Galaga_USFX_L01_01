@@ -95,4 +95,7 @@ public:
 
 	UPROPERTY(VisibleAnywhere, Category = "Game mode")
 	class ABallAdapter* AdaptadorB;
+
+	/*UPROPERTY(VisibleAnywhere, Category = "Game mode")
+	class AFacadeNaveEnemigas* FacadeNE*/;
  };

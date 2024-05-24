@@ -38,10 +38,10 @@ public:
 	TArray<ANaveEnemigaTransporte*> FlotaNETransporte;
 
 public:
-	virtual void setFlotaNEKamikaze();
-	virtual void setFlotaNECaza();
-	virtual void setFlotaNEEspia();
-	virtual void setFlotaNENodriza();
-	virtual void setFlotaNEReabastecimiento();
-	virtual void setFlotaNETransporte();
+	void setFlotaNEKamikaze();
+	void setFlotaNECaza();
+	void setFlotaNEEspia();
+	void setFlotaNENodriza();
+	void setFlotaNEReabastecimiento();
+	void setFlotaNETransporte();
 };
