@@ -23,6 +23,8 @@
 #include "FacadeNiveles.h"
 #include "ConcretoObstaculos.h"
 #include "ArquitectoObstaculos.h"
+#include "ConcretoBuilderObstaculos.h"
+
 
 AGalaga_USFX_L01GameMode::AGalaga_USFX_L01GameMode()
 {
@@ -38,21 +40,17 @@ void AGalaga_USFX_L01GameMode::BeginPlay()
 	UWorld* const World = GetWorld();
 	if (World != nullptr)
 	{	
-	/*AFabricaNavesEnemigas* FNECaza = GetWorld()->SpawnActor<AFNECaza>(AFNECaza::StaticClass());
+	//Factory Method
+	AFabricaNavesEnemigas* FNECaza = GetWorld()->SpawnActor<AFNECaza>(AFNECaza::StaticClass());
 	ANaveEnemiga* NaveEnemigaC = FNECaza->OrderNave("Caza");
 	AFabricaNavesEnemigas* FNEKamikaze = GetWorld()->SpawnActor<AFNEKamikaze>(AFNEKamikaze::StaticClass());
 	ANaveEnemiga* NaveEnemigaK = FNEKamikaze->OrderNave("Kamikaze");
 	AFabricaNavesEnemigas* FNEEspia = GetWorld()->SpawnActor<AFNEEspia>(AFNEEspia::StaticClass());
-	ANaveEnemiga* NaveEnemigaE = FNEEspia->OrderNave("Espia");*/
+	ANaveEnemiga* NaveEnemigaE = FNEEspia->OrderNave("Espia");
 	
-	/*ConstructorPaquetesEnergia = GetWorld()->SpawnActor<AConcretoBuildCapsulas>(AConcretoBuildCapsulas::StaticClass());
+	ConstructorPaquetesEnergia = GetWorld()->SpawnActor<AConcretoBuildCapsulas>(AConcretoBuildCapsulas::StaticClass());
 	Director = GetWorld()->SpawnActor<ADirectorCapsulasEnergia>(ADirectorCapsulasEnergia::StaticClass());
-	Director->EstablecerConstructorPaquetes(ConstructorPaquetesEnergia);*/
-
-	/*ConstructorNodriza = GetWorld()->SpawnActor<AConcretoBuilderNodriza>(AConcretoBuilderNodriza::StaticClass());
-	DirectorN = GetWorld()->SpawnActor<ADirectorNodriza>(ADirectorNodriza::StaticClass());
-	DirectorN->EstablecerConsructorNodriza(ConstructorNodriza);
-	DirectorN->ConstruirNodriza();*/
+	Director->EstablecerConstructorPaquetes(ConstructorPaquetesEnergia);
 
 	//Builder Constructor de obstaculos
 	ConstructorObstaculos = GetWorld()->SpawnActor<AConcretoBuilderObstaculos>(AConcretoBuilderObstaculos::StaticClass());

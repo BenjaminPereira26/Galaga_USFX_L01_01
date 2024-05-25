@@ -72,11 +72,11 @@ private:
 	int32 ContObs;
 	float TimerController;
 
-	/*UPROPERTY(VisibleAnywhere, Category = "GameModeBase")
+	UPROPERTY(VisibleAnywhere, Category = "GameModeBase")
 	AConcretoBuildCapsulas* ConstructorPaquetesEnergia;
 
 	UPROPERTY(VisibleAnywhere, Category = "GameModeBase")
-	ADirectorCapsulasEnergia* Director;*/
+	ADirectorCapsulasEnergia* Director;
 	
 	UPROPERTY(VisibleAnywhere, Category = "GameModeBase")
 	AConcretoBuilderNodriza* ConstructorNodriza;
@@ -96,6 +96,5 @@ public:
 	UPROPERTY(VisibleAnywhere, Category = "Game mode")
 	class ABallAdapter* AdaptadorB;
 
-	/*UPROPERTY(VisibleAnywhere, Category = "Game mode")
-	class AFacadeNaveEnemigas* FacadeNE*/;
+
  };

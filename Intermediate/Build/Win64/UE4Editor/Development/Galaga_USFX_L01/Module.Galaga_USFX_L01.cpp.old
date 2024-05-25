@@ -50,7 +50,6 @@
 #include "C:/SIS457 LABS/Galaga_USFX_L01-master/Source/Galaga_USFX_L01/MainCanion.cpp"
 #include "C:/SIS457 LABS/Galaga_USFX_L01-master/Source/Galaga_USFX_L01/Motor.cpp"
 #include "C:/SIS457 LABS/Galaga_USFX_L01-master/Source/Galaga_USFX_L01/MotorNodriza.cpp"
-#include "C:/SIS457 LABS/Galaga_USFX_L01-master/Source/Galaga_USFX_L01/MovimientoNaves.cpp"
 #include "C:/SIS457 LABS/Galaga_USFX_L01-master/Source/Galaga_USFX_L01/MyAgujeroNegro.cpp"
 #include "C:/SIS457 LABS/Galaga_USFX_L01-master/Source/Galaga_USFX_L01/NaveEnemiga.cpp"
 #include "C:/SIS457 LABS/Galaga_USFX_L01-master/Source/Galaga_USFX_L01/NaveEnemigaCaza.cpp"
