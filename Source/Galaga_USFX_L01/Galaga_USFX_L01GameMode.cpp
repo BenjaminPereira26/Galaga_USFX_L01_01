@@ -80,8 +80,8 @@ void AGalaga_USFX_L01GameMode::Tick(float DeltaTime)
 	TiempoTranscurrido++;
 	TimerController += DeltaTime;
 	TimerShot += DeltaTime;
-	
-	if (TimerController >= 10.0f)
+
+	/*if (TimerController >= 10.0f)
 	{
 		Arqui->ConstruirObstaculos(ContObs);
 		TimerController = 0.0f;
@@ -90,5 +90,20 @@ void AGalaga_USFX_L01GameMode::Tick(float DeltaTime)
 		{
 			ContObs = 1;
 		}
+	}*/
+	if (TimerController >= 5.0f && TimerController <= 5.008f) {
+
+		Arqui->ConstruirObstaculos(1);
+		Director->ConstruirPaqueteEnergia(1);
+	}
+	if (TimerController >= 10.0f && TimerController <= 10.008f) {
+
+		Arqui->ConstruirObstaculos(2);
+		Director->ConstruirPaqueteEnergia(2);
+	}
+	if (TimerController >= 15.0f && TimerController <= 15.008f) {
+
+		Arqui->ConstruirObstaculos(3);
+		Director->ConstruirPaqueteEnergia(3);
 	}
 }

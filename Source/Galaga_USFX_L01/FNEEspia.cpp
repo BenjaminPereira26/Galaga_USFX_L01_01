@@ -5,7 +5,7 @@
 #include "NaveEnemigaEspia.h"
 ANaveEnemiga* AFNEEspia::ConcoctNave(FString NaveSKU)
 {
-	FVector SpawningLocation = FVector(-600.0f, -200.0f, 250.0f);
+	FVector SpawningLocation = FVector(-300.0f, -200.0f, 250.0f);
 	FRotator SpawningRotation = FRotator::ZeroRotator;
 	UWorld* const World = GetWorld();
 	if (World != nullptr) {
