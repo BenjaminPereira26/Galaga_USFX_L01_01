@@ -2,17 +2,8 @@
 
 #include "Galaga_USFX_L01GameMode.h"
 #include "Galaga_USFX_L01Pawn.h"
-#include "NaveEnemiga.h"
-#include "NaveEnemigaCaza.h"
-#include "NaveEnemigaEspia.h"
+#include "Galaga_USFX_L01Projectile.h"
 #include "NaveEnemigaKamikaze.h"
-#include "NaveEnemigaNodriza.h"
-#include "NaveEnemigaReabastecimiento.h"
-#include "NaveEnemigaTransporte.h"
-#include "CapsulaEnergia50pts.h"
-#include "CapsulaEnergia100pts.h"
-#include "CapsulaEnergia200pts.h"
-#include "MyAgujeroNegro.h"
 #include "FNECaza.h"
 #include "ExplosiveAdapter.h"
 #include "FNEKamikaze.h"
@@ -24,6 +15,9 @@
 #include "ConcretoObstaculos.h"
 #include "ArquitectoObstaculos.h"
 #include "ConcretoBuilderObstaculos.h"
+#include "ConcretoBuildCapsulas.h"
+#include "Record.h"
+#include "SuscriptorPrueba.h"
 
 
 AGalaga_USFX_L01GameMode::AGalaga_USFX_L01GameMode()
@@ -32,6 +26,7 @@ AGalaga_USFX_L01GameMode::AGalaga_USFX_L01GameMode()
 	DefaultPawnClass = AGalaga_USFX_L01Pawn::StaticClass();
 	ContObs = 1;
 	TimerController = 0.0f;
+	TimeDay = 0.0f;
 }
 
 void AGalaga_USFX_L01GameMode::BeginPlay()
@@ -65,10 +60,31 @@ void AGalaga_USFX_L01GameMode::BeginPlay()
 	Jugador->lanzar();
 
 	//Facade creación naves enemigas por nivel
-	AFacadeNiveles* FacadeNiv = GetWorld()->SpawnActor<AFacadeNiveles>(AFacadeNiveles::StaticClass());
+	/*AFacadeNiveles* FacadeNiv = GetWorld()->SpawnActor<AFacadeNiveles>(AFacadeNiveles::StaticClass());
 	FacadeNiv->setNENivel1();
 	FacadeNiv->setNENivel2();
-	FacadeNiv->setNENivel3();
+	FacadeNiv->setNENivel3();*/
+
+	//Builder Nodriza
+	ConstructorNodriza = GetWorld()->SpawnActor<AConcretoBuilderNodriza>(AConcretoBuilderNodriza::StaticClass());
+	DirectorN = GetWorld()->SpawnActor<ADirectorNodriza>(ADirectorNodriza::StaticClass());
+	DirectorN->EstablecerConstructorNodriza(ConstructorNodriza);
+	DirectorN->ConstruirNodriza();
+
+	//Observer
+	Record = GetWorld()->SpawnActor<ARecord>(ARecord::StaticClass());
+	Sub = GetWorld()->SpawnActor<ASuscriptorPrueba>(ASuscriptorPrueba::StaticClass());
+	Sub->EstablecerRecord(Record);
+
+	//Facade
+	AFacadeNiveles* FacadeNiv = GetWorld()->SpawnActor<AFacadeNiveles>(AFacadeNiveles::StaticClass());
+	FacadeNiv->setNivel(1);
+	FacadeNiv->setNivel(2);
+	FacadeNiv->setNivel(3);
+
+	//State
+	NEKamikaze = GetWorld()->SpawnActor<ANaveEnemigaKamikaze>(ANaveEnemigaKamikaze::StaticClass());
+	NEKamikaze->InicializarEstado("Pasivo");
 	}
 
 }
@@ -81,29 +97,23 @@ void AGalaga_USFX_L01GameMode::Tick(float DeltaTime)
 	TimerController += DeltaTime;
 	TimerShot += DeltaTime;
 
-	/*if (TimerController >= 10.0f)
-	{
-		Arqui->ConstruirObstaculos(ContObs);
-		TimerController = 0.0f;
-		ContObs++;
-		if (ContObs > 3)
-		{
-			ContObs = 1;
-		}
-	}*/
-	if (TimerController >= 5.0f && TimerController <= 5.008f) {
+	if (TimerController >= 5.0f && TimerController <= 5.032f) {
 
 		Arqui->ConstruirObstaculos(1);
 		Director->ConstruirPaqueteEnergia(1);
+		Record->SetPuntaje("100pts");
+		NEKamikaze->SetEstado(NEKamikaze->EstadoActivo);
 	}
-	if (TimerController >= 10.0f && TimerController <= 10.008f) {
-
+	if (TimerController >= 10.0f && TimerController <= 10.032f) 
+	{
 		Arqui->ConstruirObstaculos(2);
 		Director->ConstruirPaqueteEnergia(2);
+		Record->SetPuntaje("200pts");
 	}
-	if (TimerController >= 15.0f && TimerController <= 15.008f) {
+	if (TimerController >= 15.0f && TimerController <= 15.032f) {
 
 		Arqui->ConstruirObstaculos(3);
 		Director->ConstruirPaqueteEnergia(3);
+		Record->SetPuntaje("300pts");
 	}
 }

@@ -13,10 +13,10 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define GALAGA_USFX_L01_Galaga_USFX_L01GameMode_generated_h
 
-#define Galaga_USFX_L01_master_Source_Galaga_USFX_L01_Galaga_USFX_L01GameMode_h_29_SPARSE_DATA
-#define Galaga_USFX_L01_master_Source_Galaga_USFX_L01_Galaga_USFX_L01GameMode_h_29_RPC_WRAPPERS
-#define Galaga_USFX_L01_master_Source_Galaga_USFX_L01_Galaga_USFX_L01GameMode_h_29_RPC_WRAPPERS_NO_PURE_DECLS
-#define Galaga_USFX_L01_master_Source_Galaga_USFX_L01_Galaga_USFX_L01GameMode_h_29_INCLASS_NO_PURE_DECLS \
+#define Galaga_USFX_L01_master_Source_Galaga_USFX_L01_Galaga_USFX_L01GameMode_h_19_SPARSE_DATA
+#define Galaga_USFX_L01_master_Source_Galaga_USFX_L01_Galaga_USFX_L01GameMode_h_19_RPC_WRAPPERS
+#define Galaga_USFX_L01_master_Source_Galaga_USFX_L01_Galaga_USFX_L01GameMode_h_19_RPC_WRAPPERS_NO_PURE_DECLS
+#define Galaga_USFX_L01_master_Source_Galaga_USFX_L01_Galaga_USFX_L01GameMode_h_19_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAGalaga_USFX_L01GameMode(); \
 	friend struct Z_Construct_UClass_AGalaga_USFX_L01GameMode_Statics; \
@@ -25,7 +25,7 @@ public: \
 	DECLARE_SERIALIZER(AGalaga_USFX_L01GameMode)
 
 
-#define Galaga_USFX_L01_master_Source_Galaga_USFX_L01_Galaga_USFX_L01GameMode_h_29_INCLASS \
+#define Galaga_USFX_L01_master_Source_Galaga_USFX_L01_Galaga_USFX_L01GameMode_h_19_INCLASS \
 private: \
 	static void StaticRegisterNativesAGalaga_USFX_L01GameMode(); \
 	friend struct Z_Construct_UClass_AGalaga_USFX_L01GameMode_Statics; \
@@ -34,7 +34,7 @@ public: \
 	DECLARE_SERIALIZER(AGalaga_USFX_L01GameMode)
 
 
-#define Galaga_USFX_L01_master_Source_Galaga_USFX_L01_Galaga_USFX_L01GameMode_h_29_STANDARD_CONSTRUCTORS \
+#define Galaga_USFX_L01_master_Source_Galaga_USFX_L01_Galaga_USFX_L01GameMode_h_19_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	GALAGA_USFX_L01_API AGalaga_USFX_L01GameMode(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AGalaga_USFX_L01GameMode) \
@@ -47,7 +47,7 @@ private: \
 public:
 
 
-#define Galaga_USFX_L01_master_Source_Galaga_USFX_L01_Galaga_USFX_L01GameMode_h_29_ENHANCED_CONSTRUCTORS \
+#define Galaga_USFX_L01_master_Source_Galaga_USFX_L01_Galaga_USFX_L01GameMode_h_19_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	GALAGA_USFX_L01_API AGalaga_USFX_L01GameMode(AGalaga_USFX_L01GameMode&&); \
@@ -58,36 +58,39 @@ public: \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AGalaga_USFX_L01GameMode)
 
 
-#define Galaga_USFX_L01_master_Source_Galaga_USFX_L01_Galaga_USFX_L01GameMode_h_29_PRIVATE_PROPERTY_OFFSET \
+#define Galaga_USFX_L01_master_Source_Galaga_USFX_L01_Galaga_USFX_L01GameMode_h_19_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__ConstructorPaquetesEnergia() { return STRUCT_OFFSET(AGalaga_USFX_L01GameMode, ConstructorPaquetesEnergia); } \
 	FORCEINLINE static uint32 __PPO__Director() { return STRUCT_OFFSET(AGalaga_USFX_L01GameMode, Director); } \
 	FORCEINLINE static uint32 __PPO__ConstructorNodriza() { return STRUCT_OFFSET(AGalaga_USFX_L01GameMode, ConstructorNodriza); } \
 	FORCEINLINE static uint32 __PPO__DirectorN() { return STRUCT_OFFSET(AGalaga_USFX_L01GameMode, DirectorN); } \
 	FORCEINLINE static uint32 __PPO__ConstructorObstaculos() { return STRUCT_OFFSET(AGalaga_USFX_L01GameMode, ConstructorObstaculos); } \
-	FORCEINLINE static uint32 __PPO__Arqui() { return STRUCT_OFFSET(AGalaga_USFX_L01GameMode, Arqui); }
+	FORCEINLINE static uint32 __PPO__Arqui() { return STRUCT_OFFSET(AGalaga_USFX_L01GameMode, Arqui); } \
+	FORCEINLINE static uint32 __PPO__Record() { return STRUCT_OFFSET(AGalaga_USFX_L01GameMode, Record); } \
+	FORCEINLINE static uint32 __PPO__Sub() { return STRUCT_OFFSET(AGalaga_USFX_L01GameMode, Sub); } \
+	FORCEINLINE static uint32 __PPO__NEKamikaze() { return STRUCT_OFFSET(AGalaga_USFX_L01GameMode, NEKamikaze); }
 
 
-#define Galaga_USFX_L01_master_Source_Galaga_USFX_L01_Galaga_USFX_L01GameMode_h_26_PROLOG
-#define Galaga_USFX_L01_master_Source_Galaga_USFX_L01_Galaga_USFX_L01GameMode_h_29_GENERATED_BODY_LEGACY \
+#define Galaga_USFX_L01_master_Source_Galaga_USFX_L01_Galaga_USFX_L01GameMode_h_16_PROLOG
+#define Galaga_USFX_L01_master_Source_Galaga_USFX_L01_Galaga_USFX_L01GameMode_h_19_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	Galaga_USFX_L01_master_Source_Galaga_USFX_L01_Galaga_USFX_L01GameMode_h_29_PRIVATE_PROPERTY_OFFSET \
-	Galaga_USFX_L01_master_Source_Galaga_USFX_L01_Galaga_USFX_L01GameMode_h_29_SPARSE_DATA \
-	Galaga_USFX_L01_master_Source_Galaga_USFX_L01_Galaga_USFX_L01GameMode_h_29_RPC_WRAPPERS \
-	Galaga_USFX_L01_master_Source_Galaga_USFX_L01_Galaga_USFX_L01GameMode_h_29_INCLASS \
-	Galaga_USFX_L01_master_Source_Galaga_USFX_L01_Galaga_USFX_L01GameMode_h_29_STANDARD_CONSTRUCTORS \
+	Galaga_USFX_L01_master_Source_Galaga_USFX_L01_Galaga_USFX_L01GameMode_h_19_PRIVATE_PROPERTY_OFFSET \
+	Galaga_USFX_L01_master_Source_Galaga_USFX_L01_Galaga_USFX_L01GameMode_h_19_SPARSE_DATA \
+	Galaga_USFX_L01_master_Source_Galaga_USFX_L01_Galaga_USFX_L01GameMode_h_19_RPC_WRAPPERS \
+	Galaga_USFX_L01_master_Source_Galaga_USFX_L01_Galaga_USFX_L01GameMode_h_19_INCLASS \
+	Galaga_USFX_L01_master_Source_Galaga_USFX_L01_Galaga_USFX_L01GameMode_h_19_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define Galaga_USFX_L01_master_Source_Galaga_USFX_L01_Galaga_USFX_L01GameMode_h_29_GENERATED_BODY \
+#define Galaga_USFX_L01_master_Source_Galaga_USFX_L01_Galaga_USFX_L01GameMode_h_19_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	Galaga_USFX_L01_master_Source_Galaga_USFX_L01_Galaga_USFX_L01GameMode_h_29_PRIVATE_PROPERTY_OFFSET \
-	Galaga_USFX_L01_master_Source_Galaga_USFX_L01_Galaga_USFX_L01GameMode_h_29_SPARSE_DATA \
-	Galaga_USFX_L01_master_Source_Galaga_USFX_L01_Galaga_USFX_L01GameMode_h_29_RPC_WRAPPERS_NO_PURE_DECLS \
-	Galaga_USFX_L01_master_Source_Galaga_USFX_L01_Galaga_USFX_L01GameMode_h_29_INCLASS_NO_PURE_DECLS \
-	Galaga_USFX_L01_master_Source_Galaga_USFX_L01_Galaga_USFX_L01GameMode_h_29_ENHANCED_CONSTRUCTORS \
+	Galaga_USFX_L01_master_Source_Galaga_USFX_L01_Galaga_USFX_L01GameMode_h_19_PRIVATE_PROPERTY_OFFSET \
+	Galaga_USFX_L01_master_Source_Galaga_USFX_L01_Galaga_USFX_L01GameMode_h_19_SPARSE_DATA \
+	Galaga_USFX_L01_master_Source_Galaga_USFX_L01_Galaga_USFX_L01GameMode_h_19_RPC_WRAPPERS_NO_PURE_DECLS \
+	Galaga_USFX_L01_master_Source_Galaga_USFX_L01_Galaga_USFX_L01GameMode_h_19_INCLASS_NO_PURE_DECLS \
+	Galaga_USFX_L01_master_Source_Galaga_USFX_L01_Galaga_USFX_L01GameMode_h_19_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

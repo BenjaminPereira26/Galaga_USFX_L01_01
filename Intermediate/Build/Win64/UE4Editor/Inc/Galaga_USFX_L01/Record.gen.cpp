@@ -15,7 +15,7 @@ void EmptyLinkFunctionForGeneratedCodeRecord() {}
 // Cross Module References
 	GALAGA_USFX_L01_API UClass* Z_Construct_UClass_ARecord_NoRegister();
 	GALAGA_USFX_L01_API UClass* Z_Construct_UClass_ARecord();
-	ENGINE_API UClass* Z_Construct_UClass_AActor();
+	GALAGA_USFX_L01_API UClass* Z_Construct_UClass_APublicadorObserver();
 	UPackage* Z_Construct_UPackage__Script_Galaga_USFX_L01();
 // End Cross Module References
 	void ARecord::StaticRegisterNativesARecord()
@@ -35,7 +35,7 @@ void EmptyLinkFunctionForGeneratedCodeRecord() {}
 		static const UE4CodeGen_Private::FClassParams ClassParams;
 	};
 	UObject* (*const Z_Construct_UClass_ARecord_Statics::DependentSingletons[])() = {
-		(UObject* (*)())Z_Construct_UClass_AActor,
+		(UObject* (*)())Z_Construct_UClass_APublicadorObserver,
 		(UObject* (*)())Z_Construct_UPackage__Script_Galaga_USFX_L01,
 	};
 #if WITH_METADATA
@@ -71,7 +71,7 @@ void EmptyLinkFunctionForGeneratedCodeRecord() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ARecord, 4014103253);
+	IMPLEMENT_CLASS(ARecord, 1773390150);
 	template<> GALAGA_USFX_L01_API UClass* StaticClass<ARecord>()
 	{
 		return ARecord::StaticClass();

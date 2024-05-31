@@ -19,16 +19,22 @@ public:
 	// Sets default values for this actor's properties
 	AConcretoNodriza();
 
+public:
+	AMotorNodriza* MotorN;
+	AArmaNodriza* ArmaN;
+	AChasisNodriza* ChasisN;
+
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
-	class UMovimientoNaves* MovimientoNaves;
-	float velocidad;
+
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
+	float velocidad;
 public:
 	void SetMotorNodriza() override;
 	void SetArmaNodriza() override;
 	void SetChasisNodriza() override;
+	void Mover(float DeltaTime);
 };

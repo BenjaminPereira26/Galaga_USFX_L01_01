@@ -25,3 +25,19 @@ void ARecord::Tick(float DeltaTime)
 
 }
 
+void ARecord::CambioPuntaje()
+{
+	NotificadorSubscriptores();
+}
+
+void ARecord::SetPuntaje(FString _Puntos)
+{
+	Puntaje = _Puntos;
+	CambioPuntaje();
+}
+
+FString ARecord::GetPuntaje()
+{
+	return Puntaje;
+}
+

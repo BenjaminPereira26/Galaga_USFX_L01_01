@@ -28,7 +28,7 @@ void UMovimientoNaves::Mover(float DeltaTime)
 	FVector PosicionActual = GetOwner()->GetActorLocation();
 	FVector NuevaPosicion = FVector(PosicionActual.X, PosicionActual.Y + 50.0f * DeltaTime * velocidad, PosicionActual.Z);
 	GetOwner()->SetActorLocation(NuevaPosicion);
-	if (NuevaPosicion.Y > 800.0f || NuevaPosicion.Y < -500.0f) {
+	if (NuevaPosicion.Y > 950.0f || NuevaPosicion.Y < -500.0f) {
 		velocidad = -velocidad;
 	}
 }

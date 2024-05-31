@@ -21,7 +21,7 @@ private: \
 	static void StaticRegisterNativesARecord(); \
 	friend struct Z_Construct_UClass_ARecord_Statics; \
 public: \
-	DECLARE_CLASS(ARecord, AActor, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/Galaga_USFX_L01"), NO_API) \
+	DECLARE_CLASS(ARecord, APublicadorObserver, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/Galaga_USFX_L01"), NO_API) \
 	DECLARE_SERIALIZER(ARecord)
 
 
@@ -30,7 +30,7 @@ private: \
 	static void StaticRegisterNativesARecord(); \
 	friend struct Z_Construct_UClass_ARecord_Statics; \
 public: \
-	DECLARE_CLASS(ARecord, AActor, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/Galaga_USFX_L01"), NO_API) \
+	DECLARE_CLASS(ARecord, APublicadorObserver, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/Galaga_USFX_L01"), NO_API) \
 	DECLARE_SERIALIZER(ARecord)
 
 

@@ -26,9 +26,10 @@ public:
 
 public:
 class AFacadeNaveEnemigas* FacadeNE;
-
+int Nivel;
 public:
 	void setNENivel1();
 	void setNENivel2();
 	void setNENivel3();
+	void setNivel(int32 _Nivel);
 };

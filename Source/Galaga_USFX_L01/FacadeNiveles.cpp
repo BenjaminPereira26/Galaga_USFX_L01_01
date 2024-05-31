@@ -44,3 +44,17 @@ void AFacadeNiveles::setNENivel3()
 	FacadeNE->setFlotaNEKamikaze();
 }
 
+void AFacadeNiveles::setNivel(int32 _Nivel)
+{
+	if (_Nivel == 1) {
+		setNENivel1();
+	}
+	else if (_Nivel == 2) {
+		setNENivel2();
+	}
+	else if (_Nivel == 3) {
+		setNENivel3();
+	}
+}
+
+
