@@ -9,7 +9,6 @@ AEstadoActivo::AEstadoActivo()
 {
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
-	velocidad = 4;
 }
 
 // Called when the game starts or when spawned
@@ -23,23 +22,12 @@ void AEstadoActivo::BeginPlay()
 void AEstadoActivo::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-	Mover(DeltaTime);
 	Disparar();
 }
 
 void AEstadoActivo::setNE(ANaveEnemigaKamikaze* _NEKamikaze)
 {
     NEKamikaze = Cast<ANaveEnemigaKamikaze>(_NEKamikaze);
-}
-
-void AEstadoActivo::Mover(float DeltaTime)
-{
-    FVector PosicionActual = GetOwner()->GetActorLocation();
-    FVector NuevaPosicion = FVector(PosicionActual.X, PosicionActual.Y + 50.0f * DeltaTime * velocidad, PosicionActual.Z);
-    GetOwner()->SetActorLocation(NuevaPosicion);
-    if (NuevaPosicion.Y > 950.0f || NuevaPosicion.Y < -500.0f) {
-        velocidad = -velocidad;
-    }
 }
 
 void AEstadoActivo::Disparar()

@@ -97,3 +97,19 @@ void AFacadeNaveEnemigas::setFlotaNETransporte()
 	}
 }
 
+void AFacadeNaveEnemigas::setAyudantePawn()
+{
+	UWorld* const World = GetWorld();
+	for (int i = 0; i < 1; i++) {
+		FVector PosicionNaveActual = FVector(-790.0f, -450.0f , 214.72f);
+		AAyudantePawn* AP = World->SpawnActor<AAyudantePawn>(PosicionNaveActual, FRotator::ZeroRotator);
+
+
+		AyudantePawn.Push(AP);
+	}
+}
+
+void AFacadeNaveEnemigas::setCanionB()
+{
+}
+

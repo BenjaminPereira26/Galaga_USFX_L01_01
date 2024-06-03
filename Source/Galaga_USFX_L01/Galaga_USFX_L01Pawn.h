@@ -91,5 +91,8 @@ public:
 	class IIBounceBall* BounceBall;
 	void SetBounceBall(AActor* _Adaptador);
 	void lanzar() override;
+
+	void SpawnAyudante();
+
 };
 

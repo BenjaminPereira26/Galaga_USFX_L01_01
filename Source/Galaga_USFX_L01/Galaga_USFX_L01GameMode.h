@@ -67,9 +67,12 @@ protected:
 
 	UPROPERTY(VisibleAnywhere, Category = "Game mode")
 	class ASuscriptorPrueba* Sub;
-	UPROPERTY(VisibleAnywhere, Category = "Game mode")
-	class ANaveEnemigaKamikaze* NEKamikaze;
-
 public:
 	float TimeDay;
+
+public:
+	class AAyudantePawn* Ayudante;
+	class ADisparoN1* DisparoN1;
+	class ADisparoN2* DisparoN2;
+	class ADisparoN3* DisparoN3;
  };

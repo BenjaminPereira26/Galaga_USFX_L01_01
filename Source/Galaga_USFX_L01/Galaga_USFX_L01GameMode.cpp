@@ -17,7 +17,11 @@
 #include "ConcretoBuilderObstaculos.h"
 #include "ConcretoBuildCapsulas.h"
 #include "Record.h"
+#include "AyudantePawn.h"
 #include "SuscriptorPrueba.h"
+#include "DisparoN1.h"
+#include "DisparoN2.h"
+#include "DisparoN3.h"
 
 
 AGalaga_USFX_L01GameMode::AGalaga_USFX_L01GameMode()
@@ -82,9 +86,19 @@ void AGalaga_USFX_L01GameMode::BeginPlay()
 	FacadeNiv->setNivel(2);
 	FacadeNiv->setNivel(3);
 
-	//State
-	NEKamikaze = GetWorld()->SpawnActor<ANaveEnemigaKamikaze>(ANaveEnemigaKamikaze::StaticClass());
-	NEKamikaze->InicializarEstado("Pasivo");
+
+	Ayudante = GetWorld()->SpawnActor<AAyudantePawn>(AAyudantePawn::StaticClass());
+
+	DisparoN1 = GetWorld()->SpawnActor<ADisparoN1>(ADisparoN1::StaticClass());
+	DisparoN2 = GetWorld()->SpawnActor<ADisparoN2>(ADisparoN2::StaticClass());
+	DisparoN3 = GetWorld()->SpawnActor<ADisparoN3>(ADisparoN3::StaticClass());
+
+	Ayudante->CambiarEstrategias(DisparoN1);
+	Ayudante->EjecutarEstrategias();
+	/*Ayudante->CambiarEstrategias(DisparoN2);
+	Ayudante->EjecutarEstrategias();
+	Ayudante->CambiarEstrategias(DisparoN3);
+	Ayudante->EjecutarEstrategias();*/
 	}
 
 }
@@ -93,27 +107,25 @@ void AGalaga_USFX_L01GameMode::BeginPlay()
 void AGalaga_USFX_L01GameMode::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-	TiempoTranscurrido++;
 	TimerController += DeltaTime;
-	TimerShot += DeltaTime;
-
+	
 	if (TimerController >= 5.0f && TimerController <= 5.032f) {
 
 		Arqui->ConstruirObstaculos(1);
 		Director->ConstruirPaqueteEnergia(1);
-		Record->SetPuntaje("100pts");
-		NEKamikaze->SetEstado(NEKamikaze->EstadoActivo);
+	
+
 	}
-	if (TimerController >= 10.0f && TimerController <= 10.032f) 
+	if (TimerController >= 15.0f && TimerController <= 15.032f) 
 	{
 		Arqui->ConstruirObstaculos(2);
 		Director->ConstruirPaqueteEnergia(2);
-		Record->SetPuntaje("200pts");
+		
 	}
-	if (TimerController >= 15.0f && TimerController <= 15.032f) {
+	if (TimerController >= 20.0f && TimerController <= 20.032f) {
 
 		Arqui->ConstruirObstaculos(3);
 		Director->ConstruirPaqueteEnergia(3);
-		Record->SetPuntaje("300pts");
+
 	}
 }

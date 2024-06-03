@@ -2,6 +2,7 @@
 
 #include "Galaga_USFX_L01Pawn.h"
 #include "Galaga_USFX_L01Projectile.h"
+#include "AyudantePawn.h"
 #include "TimerManager.h"
 #include "UObject/ConstructorHelpers.h"
 #include "Camera/CameraComponent.h"
@@ -55,6 +56,7 @@ AGalaga_USFX_L01Pawn::AGalaga_USFX_L01Pawn()
 	range = 0.0f;
 	bCanFire = true;
 	/*Barreras = CreateDefaultSubobject<UBarreras>(TEXT("MovementComponent"));*/
+	SpawnAyudante();
 }
 
 void AGalaga_USFX_L01Pawn::SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent)
@@ -166,6 +168,20 @@ FVector AGalaga_USFX_L01Pawn::ObtenerUbicacionObjetoQueSemueve()
 		return ObjetoQueSemueve->GetActorLocation();
 	}
 	return FVector::ZeroVector;
+}
+
+
+
+void AGalaga_USFX_L01Pawn::SpawnAyudante()
+{
+	UWorld* const World = GetWorld();
+	FVector SpawnLocation = FVector(-790.0f, 10.0f, 214.0f);
+	FRotator SpawnRotation = FRotator::ZeroRotator;
+	if (World != nullptr)
+	{
+		// spawn the projectile
+		World->SpawnActor<AAyudantePawn>(AAyudantePawn::StaticClass(), SpawnLocation, SpawnRotation);
+	}
 }
 
 

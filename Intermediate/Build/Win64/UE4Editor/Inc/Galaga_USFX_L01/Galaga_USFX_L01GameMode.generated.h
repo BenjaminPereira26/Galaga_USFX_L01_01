@@ -66,8 +66,7 @@ public: \
 	FORCEINLINE static uint32 __PPO__ConstructorObstaculos() { return STRUCT_OFFSET(AGalaga_USFX_L01GameMode, ConstructorObstaculos); } \
 	FORCEINLINE static uint32 __PPO__Arqui() { return STRUCT_OFFSET(AGalaga_USFX_L01GameMode, Arqui); } \
 	FORCEINLINE static uint32 __PPO__Record() { return STRUCT_OFFSET(AGalaga_USFX_L01GameMode, Record); } \
-	FORCEINLINE static uint32 __PPO__Sub() { return STRUCT_OFFSET(AGalaga_USFX_L01GameMode, Sub); } \
-	FORCEINLINE static uint32 __PPO__NEKamikaze() { return STRUCT_OFFSET(AGalaga_USFX_L01GameMode, NEKamikaze); }
+	FORCEINLINE static uint32 __PPO__Sub() { return STRUCT_OFFSET(AGalaga_USFX_L01GameMode, Sub); }
 
 
 #define Galaga_USFX_L01_master_Source_Galaga_USFX_L01_Galaga_USFX_L01GameMode_h_16_PROLOG

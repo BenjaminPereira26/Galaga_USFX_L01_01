@@ -30,6 +30,5 @@ protected:
 
 public:
 	void setNE(class ANaveEnemigaKamikaze* _NEKamikaze) override;
-	void Mover(float DeltaTime) override;
 	void Disparar() override;
 };

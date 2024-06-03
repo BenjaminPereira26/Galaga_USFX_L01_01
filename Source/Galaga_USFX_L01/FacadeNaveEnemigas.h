@@ -10,6 +10,8 @@
 #include "NaveEnemigaNodriza.h"
 #include "NaveEnemigaReabastecimiento.h"
 #include "NaveEnemigaTransporte.h"
+#include "AyudantePawn.h"
+#include "CanionBala.h"
 #include "FacadeNaveEnemigas.generated.h"
 
 UCLASS()
@@ -36,7 +38,8 @@ public:
 	TArray<ANaveEnemigaNodriza*> FlotaNENodriza;
 	TArray<ANaveEnemigaReabastecimiento*> FlotaNEReabastecimiento;
 	TArray<ANaveEnemigaTransporte*> FlotaNETransporte;
-
+	TArray<AAyudantePawn*> AyudantePawn;
+	TArray<ACanionBala*> CanionB;
 public:
 	void setFlotaNEKamikaze();
 	void setFlotaNECaza();
@@ -44,4 +47,6 @@ public:
 	void setFlotaNENodriza();
 	void setFlotaNEReabastecimiento();
 	void setFlotaNETransporte();
+	void setAyudantePawn();
+	void setCanionB();
 };

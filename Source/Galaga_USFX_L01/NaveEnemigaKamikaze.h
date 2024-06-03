@@ -18,23 +18,21 @@ private:
 	
 public:
 	ANaveEnemigaKamikaze();
-
-protected:
-	virtual void Mover(float DeltaTime);
-	virtual void Disparar();
 	
 public:
 	virtual void Tick(float DeltaTime) override;
+	virtual void BeginPlay() override;
+	class UMovimientoNaves* MovimientoNaves;
 
 public:
 	float velocidad;
-public:
-	IIEstadoNE* EstadoPasivo;
+	void InicializarEstado(FString _Estados);
+
 	IIEstadoNE* EstadoActivo;
+	IIEstadoNE* EstadoPasivo;
 	IIEstadoNE* EstadoDescontrolado;
 	IIEstadoNE* Estado;
 
-	FORCEINLINE void InicializarEstado(FString _Estados);
-	FORCEINLINE void SetEstado(IIEstadoNE* _Estado);
-
+	void SetEstado(IIEstadoNE* _Estado);
+	void DispararK();
 };

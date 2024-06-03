@@ -30,6 +30,7 @@ void AFacadeNiveles::setNENivel1()
 {
 	FacadeNE->setFlotaNETransporte();
 	FacadeNE->setFlotaNEReabastecimiento();
+	FacadeNE->setAyudantePawn();	
 }
 
 void AFacadeNiveles::setNENivel2()

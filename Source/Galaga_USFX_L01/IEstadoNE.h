@@ -22,10 +22,8 @@ class GALAGA_USFX_L01_API IIEstadoNE
 
 	// Add interface functions to this class. This is the class that will be inherited to implement this interface.
 public:
-	int velocidad;
 	float TimerDisparo;
 	virtual void setNE(class ANaveEnemigaKamikaze* _NEKamikaze) = 0;
 
-	virtual void Mover(float DeltaTime) = 0;
 	virtual void Disparar() = 0;
 };
