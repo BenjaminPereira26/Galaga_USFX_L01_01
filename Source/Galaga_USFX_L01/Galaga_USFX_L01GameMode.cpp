@@ -22,6 +22,14 @@
 #include "DisparoN1.h"
 #include "DisparoN2.h"
 #include "DisparoN3.h"
+#include "CapsulaBridge.h"
+#include "NaveEnemigaCaza.h"
+#include "NaveEnemigaNodriza.h"
+#include "NaveEnemigaTransporte.h"
+
+
+
+
 
 
 AGalaga_USFX_L01GameMode::AGalaga_USFX_L01GameMode()
@@ -95,10 +103,30 @@ void AGalaga_USFX_L01GameMode::BeginPlay()
 
 	Ayudante->CambiarEstrategias(DisparoN1);
 	Ayudante->EjecutarEstrategias();
-	/*Ayudante->CambiarEstrategias(DisparoN2);
-	Ayudante->EjecutarEstrategias();
-	Ayudante->CambiarEstrategias(DisparoN3);
-	Ayudante->EjecutarEstrategias();*/
+	
+
+	const int32 NumeroDeColumnasCB = 1;
+	const int32 NumeroDeFilasCB = 5;
+
+	for (int32 Columna = 0; Columna < NumeroDeColumnasCB; ++Columna)
+	{
+		TArray<ACapsulaBridge*> CBEnColumna;
+		for (int32 Fila = 0; Fila < NumeroDeFilasCB; ++Fila)
+		{
+			FVector SpawningLocation = FVector(Columna * 300 + 1900.0f, Fila * 200 + -500.0f, 250.0f);
+			FRotator SpawningRotation = FRotator::ZeroRotator;
+
+			ACapsulaBridge* NuevaCB = GetWorld()->SpawnActor<ACapsulaBridge>(SpawningLocation, SpawningRotation);
+			CBEnColumna.Add(NuevaCB);
+		}
+		ColumnaCapsulasBridge.Add(Columna, CBEnColumna);
+	}
+	Nodriza = GetWorld()->SpawnActor<ANaveEnemigaNodriza>(ANaveEnemigaNodriza::StaticClass());
+	Caza = GetWorld()->SpawnActor<ANaveEnemigaCaza>(ANaveEnemigaCaza::StaticClass());
+	Transporte = GetWorld()->SpawnActor<ANaveEnemigaTransporte>(ANaveEnemigaTransporte::StaticClass());
+
+	Capsula = GetWorld()->SpawnActor<ACapsulaBridge>(ACapsulaBridge::StaticClass());
+
 	}
 
 }
@@ -109,23 +137,38 @@ void AGalaga_USFX_L01GameMode::Tick(float DeltaTime)
 	Super::Tick(DeltaTime);
 	TimerController += DeltaTime;
 	
-	if (TimerController >= 5.0f && TimerController <= 5.032f) {
+	if (TimerController >= 5.0f && TimerController <= 5.042f) {
 
 		Arqui->ConstruirObstaculos(1);
 		Director->ConstruirPaqueteEnergia(1);
-	
 
+		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Yellow, FString::Printf(TEXT("Caza:")), true, FVector2D(1.5f, 1.5f));
+		Capsula->EstablecerPersonaje(Caza);
+		Capsula->VerificarCapsulaConsumida("consumida", 5.0f);
+		Capsula->TiposCapsulas("Velocidad");
+		Capsula->EmplearCapsula();
+		
 	}
-	if (TimerController >= 15.0f && TimerController <= 15.032f) 
+	if (TimerController >= 15.0f && TimerController <= 15.042f) 
 	{
 		Arqui->ConstruirObstaculos(2);
 		Director->ConstruirPaqueteEnergia(2);
 		
+		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Yellow, FString::Printf(TEXT("Transporte:")), true, FVector2D(1.5f, 1.5f));
+		Capsula->EstablecerPersonaje(Transporte);
+		Capsula->VerificarCapsulaConsumida("consumida", 5.0f);
+		Capsula->TiposCapsulas("Fuerza");
+		Capsula->EmplearCapsula();
 	}
-	if (TimerController >= 20.0f && TimerController <= 20.032f) {
+	if (TimerController >= 20.0f && TimerController <= 20.042f) {
 
 		Arqui->ConstruirObstaculos(3);
 		Director->ConstruirPaqueteEnergia(3);
 
+		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Yellow, FString::Printf(TEXT("Nodriza:")), true, FVector2D(1.5f, 1.5f));
+		Capsula->EstablecerPersonaje(Nodriza);
+		Capsula->VerificarCapsulaConsumida("noconsumida", 5.0f);
+		Capsula->TiposCapsulas("Debilitar");
+		Capsula->EmplearCapsula();
 	}
 }

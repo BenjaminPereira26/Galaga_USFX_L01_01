@@ -6,6 +6,7 @@
 #include "GameFramework/Character.h"
 #include "MyAgujeroNegro.h"
 #include "IBounceBall.h"
+
 #include "Galaga_USFX_L01Pawn.generated.h"
 
 UCLASS(Blueprintable)
@@ -93,6 +94,8 @@ public:
 	void lanzar() override;
 
 	void SpawnAyudante();
+
+
 
 };
 

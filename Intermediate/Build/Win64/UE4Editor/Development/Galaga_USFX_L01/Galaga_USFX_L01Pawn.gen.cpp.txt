@@ -14,4 +14,6 @@ C:\SIS457 LABS\Galaga_USFX_L01-master\Intermediate\Build\Win64\UE4Editor\Inc\Gal
 C:\SIS457 LABS\Galaga_USFX_L01-master\Intermediate\Build\Win64\UE4Editor\Inc\Galaga_USFX_L01\MyAgujeroNegro.generated.h
 C:\SIS457 LABS\Galaga_USFX_L01-master\Source\Galaga_USFX_L01\IBounceBall.h
 C:\SIS457 LABS\Galaga_USFX_L01-master\Intermediate\Build\Win64\UE4Editor\Inc\Galaga_USFX_L01\IBounceBall.generated.h
+C:\SIS457 LABS\Galaga_USFX_L01-master\Source\Galaga_USFX_L01\IImplementacion.h
+C:\SIS457 LABS\Galaga_USFX_L01-master\Intermediate\Build\Win64\UE4Editor\Inc\Galaga_USFX_L01\IImplementacion.generated.h
 C:\SIS457 LABS\Galaga_USFX_L01-master\Intermediate\Build\Win64\UE4Editor\Inc\Galaga_USFX_L01\Galaga_USFX_L01Pawn.generated.h

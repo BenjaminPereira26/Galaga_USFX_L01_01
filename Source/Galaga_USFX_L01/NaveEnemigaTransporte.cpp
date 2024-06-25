@@ -28,3 +28,35 @@ void ANaveEnemigaTransporte::Tick(float DeltaTime)
 	Super::Tick(DeltaTime);
 	Mover(DeltaTime);
 }
+
+
+bool ANaveEnemigaTransporte::CapsulaConsumida(FString _consumida)
+{
+	if (_consumida.Equals("consumida"))
+	{
+		return true;
+	}
+	return false;
+}
+
+void ANaveEnemigaTransporte::HabilitarCapsula(float _tiempo)
+{
+	TiempoCapsula = _tiempo;
+	VerificarCapsula = false;
+}
+
+bool ANaveEnemigaTransporte::DesHabilitarCapsula()
+{
+	return VerificarCapsula;
+}
+
+FString ANaveEnemigaTransporte::ObtenerTipoPoder()
+{
+	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, FString::Printf(TEXT("Duracion: %f"), TiempoCapsula));
+	return TipoPoder;
+}
+
+void ANaveEnemigaTransporte::EstablecerTipoPoder(FString _Poder)
+{
+	TipoPoder = _Poder;
+}

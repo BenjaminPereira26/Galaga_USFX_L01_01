@@ -8,10 +8,12 @@
 #include "DirectorCapsulasEnergia.h"
 #include "ConcretoBuilderNodriza.h"
 #include "DirectorNodriza.h"
+#include "CapsulaBridge.h"
 #include "ConcretoBuilderObstaculos.h"
 #include "ArquitectoObstaculos.h"
 #include "Galaga_USFX_L01GameMode.generated.h"
 
+class ACapsulaBridge;
 
 UCLASS(MinimalAPI)
 class AGalaga_USFX_L01GameMode : public AGameModeBase
@@ -33,6 +35,8 @@ public:
 
 public:
 	float TimerShot;
+	TArray<ACapsulaBridge*> TACapsulasBridge;
+	TMap<int32, TArray<ACapsulaBridge*>> ColumnaCapsulasBridge;
 private:
 	int32 ContObs;
 	float TimerController;
@@ -75,4 +79,16 @@ public:
 	class ADisparoN1* DisparoN1;
 	class ADisparoN2* DisparoN2;
 	class ADisparoN3* DisparoN3;
+
+;
+
+protected:
+	UPROPERTY(VisibleAnywhere, Category = "Game mode")
+	class ACapsulaBridge* Capsula;
+	UPROPERTY(VisibleAnywhere, Category = "Game mode")
+	class ANaveEnemigaCaza* Caza;
+	UPROPERTY(VisibleAnywhere, Category = "Game mode")
+	class ANaveEnemigaNodriza* Nodriza;
+	UPROPERTY(VisibleAnywhere, Category = "Game mode")
+	class ANaveEnemigaTransporte* Transporte;
  };

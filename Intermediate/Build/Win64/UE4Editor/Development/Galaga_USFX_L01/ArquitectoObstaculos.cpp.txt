@@ -1,5 +1,0 @@
-C:\SIS457 LABS\Galaga_USFX_L01-master\Intermediate\Build\Win64\UE4Editor\Development\Galaga_USFX_L01\Definitions.Galaga_USFX_L01.h
-C:\SIS457 LABS\Galaga_USFX_L01-master\Source\Galaga_USFX_L01\ArquitectoObstaculos.h
-C:\SIS457 LABS\Galaga_USFX_L01-master\Source\Galaga_USFX_L01\IBuilderObstaculos.h
-C:\SIS457 LABS\Galaga_USFX_L01-master\Intermediate\Build\Win64\UE4Editor\Inc\Galaga_USFX_L01\IBuilderObstaculos.generated.h
-C:\SIS457 LABS\Galaga_USFX_L01-master\Intermediate\Build\Win64\UE4Editor\Inc\Galaga_USFX_L01\ArquitectoObstaculos.generated.h

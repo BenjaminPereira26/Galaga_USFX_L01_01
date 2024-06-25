@@ -1,7 +1,0 @@
-C:\SIS457 LABS\Galaga_USFX_L01-master\Intermediate\Build\Win64\UE4Editor\Development\Galaga_USFX_L01\Definitions.Galaga_USFX_L01.h
-C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UObject/GeneratedCppIncludes.h
-C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UObject/MetaData.h
-C:\SIS457 LABS\Galaga_USFX_L01-master\Source\Galaga_USFX_L01/BallAdapter.h
-C:\SIS457 LABS\Galaga_USFX_L01-master\Source\Galaga_USFX_L01\IBounceBall.h
-C:\SIS457 LABS\Galaga_USFX_L01-master\Intermediate\Build\Win64\UE4Editor\Inc\Galaga_USFX_L01\IBounceBall.generated.h
-C:\SIS457 LABS\Galaga_USFX_L01-master\Intermediate\Build\Win64\UE4Editor\Inc\Galaga_USFX_L01\BallAdapter.generated.h

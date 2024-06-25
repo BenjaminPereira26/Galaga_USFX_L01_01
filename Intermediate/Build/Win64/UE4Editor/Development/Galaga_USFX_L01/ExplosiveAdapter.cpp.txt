@@ -1,7 +1,0 @@
-C:\SIS457 LABS\Galaga_USFX_L01-master\Intermediate\Build\Win64\UE4Editor\Development\Galaga_USFX_L01\Definitions.Galaga_USFX_L01.h
-C:\SIS457 LABS\Galaga_USFX_L01-master\Source\Galaga_USFX_L01\ExplosiveAdapter.h
-C:\SIS457 LABS\Galaga_USFX_L01-master\Source\Galaga_USFX_L01\IExplosiveShot.h
-C:\SIS457 LABS\Galaga_USFX_L01-master\Intermediate\Build\Win64\UE4Editor\Inc\Galaga_USFX_L01\IExplosiveShot.generated.h
-C:\SIS457 LABS\Galaga_USFX_L01-master\Intermediate\Build\Win64\UE4Editor\Inc\Galaga_USFX_L01\ExplosiveAdapter.generated.h
-C:\SIS457 LABS\Galaga_USFX_L01-master\Source\Galaga_USFX_L01\BalaCanion.h
-C:\SIS457 LABS\Galaga_USFX_L01-master\Intermediate\Build\Win64\UE4Editor\Inc\Galaga_USFX_L01\BalaCanion.generated.h

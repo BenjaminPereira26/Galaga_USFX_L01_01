@@ -16,6 +16,10 @@ C:\SIS457 LABS\Galaga_USFX_L01-master\Intermediate\Build\Win64\UE4Editor\Inc\Gal
 C:\SIS457 LABS\Galaga_USFX_L01-master\Intermediate\Build\Win64\UE4Editor\Inc\Galaga_USFX_L01\ConcretoBuilderNodriza.generated.h
 C:\SIS457 LABS\Galaga_USFX_L01-master\Source\Galaga_USFX_L01\DirectorNodriza.h
 C:\SIS457 LABS\Galaga_USFX_L01-master\Intermediate\Build\Win64\UE4Editor\Inc\Galaga_USFX_L01\DirectorNodriza.generated.h
+C:\SIS457 LABS\Galaga_USFX_L01-master\Source\Galaga_USFX_L01\CapsulaBridge.h
+C:\SIS457 LABS\Galaga_USFX_L01-master\Source\Galaga_USFX_L01\CapsulaEnergia.h
+C:\SIS457 LABS\Galaga_USFX_L01-master\Intermediate\Build\Win64\UE4Editor\Inc\Galaga_USFX_L01\CapsulaEnergia.generated.h
+C:\SIS457 LABS\Galaga_USFX_L01-master\Intermediate\Build\Win64\UE4Editor\Inc\Galaga_USFX_L01\CapsulaBridge.generated.h
 C:\SIS457 LABS\Galaga_USFX_L01-master\Source\Galaga_USFX_L01\ConcretoBuilderObstaculos.h
 C:\SIS457 LABS\Galaga_USFX_L01-master\Source\Galaga_USFX_L01\IBuilderObstaculos.h
 C:\SIS457 LABS\Galaga_USFX_L01-master\Intermediate\Build\Win64\UE4Editor\Inc\Galaga_USFX_L01\IBuilderObstaculos.generated.h
@@ -40,8 +44,6 @@ C:\SIS457 LABS\Galaga_USFX_L01-master\Intermediate\Build\Win64\UE4Editor\Inc\Gal
 C:\SIS457 LABS\Galaga_USFX_L01-master\Source\Galaga_USFX_L01\Galaga_USFX_L01Projectile.h
 C:\SIS457 LABS\Galaga_USFX_L01-master\Intermediate\Build\Win64\UE4Editor\Inc\Galaga_USFX_L01\Galaga_USFX_L01Projectile.generated.h
 C:\SIS457 LABS\Galaga_USFX_L01-master\Source\Galaga_USFX_L01\NaveEnemigaKamikaze.h
-C:\SIS457 LABS\Galaga_USFX_L01-master\Source\Galaga_USFX_L01\IEstadoNE.h
-C:\SIS457 LABS\Galaga_USFX_L01-master\Intermediate\Build\Win64\UE4Editor\Inc\Galaga_USFX_L01\IEstadoNE.generated.h
 C:\SIS457 LABS\Galaga_USFX_L01-master\Source\Galaga_USFX_L01\NaveEnemiga.h
 C:\SIS457 LABS\Galaga_USFX_L01-master\Intermediate\Build\Win64\UE4Editor\Inc\Galaga_USFX_L01\NaveEnemiga.generated.h
 C:\SIS457 LABS\Galaga_USFX_L01-master\Intermediate\Build\Win64\UE4Editor\Inc\Galaga_USFX_L01\NaveEnemigaKamikaze.generated.h
@@ -70,6 +72,8 @@ C:\SIS457 LABS\Galaga_USFX_L01-master\Source\Galaga_USFX_L01\BallAdapter.h
 C:\SIS457 LABS\Galaga_USFX_L01-master\Intermediate\Build\Win64\UE4Editor\Inc\Galaga_USFX_L01\BallAdapter.generated.h
 C:\SIS457 LABS\Galaga_USFX_L01-master\Source\Galaga_USFX_L01\FacadeNaveEnemigas.h
 C:\SIS457 LABS\Galaga_USFX_L01-master\Source\Galaga_USFX_L01\NaveEnemigaCaza.h
+C:\SIS457 LABS\Galaga_USFX_L01-master\Source\Galaga_USFX_L01\IImplementacion.h
+C:\SIS457 LABS\Galaga_USFX_L01-master\Intermediate\Build\Win64\UE4Editor\Inc\Galaga_USFX_L01\IImplementacion.generated.h
 C:\SIS457 LABS\Galaga_USFX_L01-master\Intermediate\Build\Win64\UE4Editor\Inc\Galaga_USFX_L01\NaveEnemigaCaza.generated.h
 C:\SIS457 LABS\Galaga_USFX_L01-master\Source\Galaga_USFX_L01\NaveEnemigaEspia.h
 C:\SIS457 LABS\Galaga_USFX_L01-master\Intermediate\Build\Win64\UE4Editor\Inc\Galaga_USFX_L01\NaveEnemigaEspia.generated.h
@@ -83,10 +87,6 @@ C:\SIS457 LABS\Galaga_USFX_L01-master\Source\Galaga_USFX_L01\AyudantePawn.h
 C:\SIS457 LABS\Galaga_USFX_L01-master\Source\Galaga_USFX_L01\Ayudante.h
 C:\SIS457 LABS\Galaga_USFX_L01-master\Intermediate\Build\Win64\UE4Editor\Inc\Galaga_USFX_L01\Ayudante.generated.h
 C:\SIS457 LABS\Galaga_USFX_L01-master\Intermediate\Build\Win64\UE4Editor\Inc\Galaga_USFX_L01\AyudantePawn.generated.h
-C:\SIS457 LABS\Galaga_USFX_L01-master\Source\Galaga_USFX_L01\CanionBala.h
-C:\SIS457 LABS\Galaga_USFX_L01-master\Source\Galaga_USFX_L01\MainCanion.h
-C:\SIS457 LABS\Galaga_USFX_L01-master\Intermediate\Build\Win64\UE4Editor\Inc\Galaga_USFX_L01\MainCanion.generated.h
-C:\SIS457 LABS\Galaga_USFX_L01-master\Intermediate\Build\Win64\UE4Editor\Inc\Galaga_USFX_L01\CanionBala.generated.h
 C:\SIS457 LABS\Galaga_USFX_L01-master\Intermediate\Build\Win64\UE4Editor\Inc\Galaga_USFX_L01\FacadeNaveEnemigas.generated.h
 C:\SIS457 LABS\Galaga_USFX_L01-master\Source\Galaga_USFX_L01\FacadeNiveles.h
 C:\SIS457 LABS\Galaga_USFX_L01-master\Intermediate\Build\Win64\UE4Editor\Inc\Galaga_USFX_L01\FacadeNiveles.generated.h

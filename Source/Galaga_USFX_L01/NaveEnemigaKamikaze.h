@@ -1,7 +1,7 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
 #pragma once
-#include "IEstadoNE.h"
+
 #include "CoreMinimal.h"
 #include "NaveEnemiga.h"
 #include "NaveEnemigaKamikaze.generated.h"
@@ -26,13 +26,7 @@ public:
 
 public:
 	float velocidad;
-	void InicializarEstado(FString _Estados);
+	
 
-	IIEstadoNE* EstadoActivo;
-	IIEstadoNE* EstadoPasivo;
-	IIEstadoNE* EstadoDescontrolado;
-	IIEstadoNE* Estado;
-
-	void SetEstado(IIEstadoNE* _Estado);
-	void DispararK();
+	
 };

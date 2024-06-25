@@ -56,7 +56,8 @@ AGalaga_USFX_L01Pawn::AGalaga_USFX_L01Pawn()
 	range = 0.0f;
 	bCanFire = true;
 	/*Barreras = CreateDefaultSubobject<UBarreras>(TEXT("MovementComponent"));*/
-	SpawnAyudante();
+	
+
 }
 
 void AGalaga_USFX_L01Pawn::SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent)
@@ -195,10 +196,13 @@ void AGalaga_USFX_L01Pawn::SetBounceBall(AActor* _Adaptador)
 	}
 }
 
+
 void AGalaga_USFX_L01Pawn::lanzar()
 {
 		BounceBall->lanzar();
 }
+
+
 
 
 

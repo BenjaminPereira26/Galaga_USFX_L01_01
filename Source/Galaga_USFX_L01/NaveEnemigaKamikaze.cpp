@@ -24,45 +24,11 @@ void ANaveEnemigaKamikaze::Tick(float DeltaTime)
 void ANaveEnemigaKamikaze::BeginPlay()
 {
 	Super::BeginPlay();
-	InicializarEstado("Pasivo");
-	DispararK();
-}
-
-void ANaveEnemigaKamikaze::InicializarEstado(FString _Estados)
-{
-	if (_Estados.Equals("Activo"))
-	{
-		EstadoPasivo=GetWorld()->SpawnActor<AEstadoPasivo>(AEstadoPasivo::StaticClass());
-		EstadoPasivo->setNE(this);
-		SetEstado(EstadoPasivo);
-		DispararK();
-	}
-	else if (_Estados.Equals("Pasivo"))
-	{
-		EstadoActivo = GetWorld()->SpawnActor<AEstadoActivo>(AEstadoActivo::StaticClass());
-		EstadoActivo->setNE(this);
-		SetEstado(EstadoActivo);
-		DispararK();
-
-	}
-	else if (_Estados.Equals("Descontrolado"))
-	{
-		EstadoDescontrolado = GetWorld()->SpawnActor<AEstadoDescontrolado>(AEstadoDescontrolado::StaticClass());
-		EstadoDescontrolado->setNE(this);
-		SetEstado(EstadoDescontrolado);
-		DispararK();
-	}
-}
-
-void ANaveEnemigaKamikaze::SetEstado(IIEstadoNE* _Estado)
-{
-	Estado = _Estado;
+	
 }
 
 
-void ANaveEnemigaKamikaze::DispararK()
-{
-	Estado->Disparar();
-}
+
+
 
  

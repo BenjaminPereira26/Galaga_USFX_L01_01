@@ -2,6 +2,7 @@
 
 #pragma once
 
+#include "IImplementacion.h"
 #include "CoreMinimal.h"
 #include "NaveEnemiga.h"
 #include "NaveEnemigaNodriza.generated.h"
@@ -10,7 +11,7 @@
  * 
  */
 UCLASS()
-class GALAGA_USFX_L01_API ANaveEnemigaNodriza : public ANaveEnemiga
+class GALAGA_USFX_L01_API ANaveEnemigaNodriza : public ANaveEnemiga, public IIImplementacion
 {
 	GENERATED_BODY()
 private:
@@ -34,4 +35,16 @@ protected:
 	virtual void Desplegar();
 public:
 	virtual void Tick(float DeltaTime) override;
+
+public:
+	bool CapsulaConsumida(FString _consumida) override;
+	void HabilitarCapsula(float _tiempo) override;
+	bool DesHabilitarCapsula() override;
+	FString ObtenerTipoPoder() override;
+	void EstablecerTipoPoder(FString _Poder) override;
+
+protected:
+	float TiempoCapsula;
+	FString TipoPoder;
+	bool VerificarCapsula;
 };
