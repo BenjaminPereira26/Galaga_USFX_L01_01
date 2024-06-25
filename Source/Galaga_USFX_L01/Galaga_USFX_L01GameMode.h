@@ -91,4 +91,8 @@ protected:
 	class ANaveEnemigaNodriza* Nodriza;
 	UPROPERTY(VisibleAnywhere, Category = "Game mode")
 	class ANaveEnemigaTransporte* Transporte;
+
+protected:
+	UPROPERTY(VisibleAnywhere, Category = "Game mode")
+	class AProxyCargarBalas* Proxy;
  };

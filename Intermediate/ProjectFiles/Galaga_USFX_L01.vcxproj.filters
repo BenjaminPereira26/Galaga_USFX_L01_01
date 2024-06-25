@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\Galaga_USFX_L01.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{51C6896E-7E5D-498C-86B2-E2C7768A58ED}</UniqueIdentifier>
+      <UniqueIdentifier>{2AEBF7AB-06E5-4E46-9460-84D11489EFDC}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\Galaga_USFX_L01.Target.cs">
       <Filter>Source</Filter>
@@ -14,7 +14,7 @@
     <None Include="..\..\.gitattributes" />
     <None Include="..\..\.gitignore" />
     <Filter Include="Config">
-      <UniqueIdentifier>{B25504EF-5485-40F6-8A95-F22270E24531}</UniqueIdentifier>
+      <UniqueIdentifier>{26052406-EE90-457C-8E56-0EC3FFB1B4A2}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -32,7 +32,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\Galaga_USFX_L01">
-      <UniqueIdentifier>{BD5935FB-AFFD-4801-BC2F-F5B552A838CB}</UniqueIdentifier>
+      <UniqueIdentifier>{DDA796D6-E378-412B-98BD-517133E30DFE}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\Galaga_USFX_L01\AgujeroNegro.cpp">
       <Filter>Source\Galaga_USFX_L01</Filter>
@@ -98,30 +98,6 @@
       <Filter>Source\Galaga_USFX_L01</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\Galaga_USFX_L01\Barreras.h">
-      <Filter>Source\Galaga_USFX_L01</Filter>
-    </ClInclude>
-    <ClCompile Include="..\..\Source\Galaga_USFX_L01\CanionBala.cpp">
-      <Filter>Source\Galaga_USFX_L01</Filter>
-    </ClCompile>
-    <ClInclude Include="..\..\Source\Galaga_USFX_L01\CanionBala.h">
-      <Filter>Source\Galaga_USFX_L01</Filter>
-    </ClInclude>
-    <ClCompile Include="..\..\Source\Galaga_USFX_L01\CanionBomba.cpp">
-      <Filter>Source\Galaga_USFX_L01</Filter>
-    </ClCompile>
-    <ClInclude Include="..\..\Source\Galaga_USFX_L01\CanionBomba.h">
-      <Filter>Source\Galaga_USFX_L01</Filter>
-    </ClInclude>
-    <ClCompile Include="..\..\Source\Galaga_USFX_L01\CanionHielo.cpp">
-      <Filter>Source\Galaga_USFX_L01</Filter>
-    </ClCompile>
-    <ClInclude Include="..\..\Source\Galaga_USFX_L01\CanionHielo.h">
-      <Filter>Source\Galaga_USFX_L01</Filter>
-    </ClInclude>
-    <ClCompile Include="..\..\Source\Galaga_USFX_L01\CanionLazer.cpp">
-      <Filter>Source\Galaga_USFX_L01</Filter>
-    </ClCompile>
-    <ClInclude Include="..\..\Source\Galaga_USFX_L01\CanionLazer.h">
       <Filter>Source\Galaga_USFX_L01</Filter>
     </ClInclude>
     <ClCompile Include="..\..\Source\Galaga_USFX_L01\CapsulaBridge.cpp">
@@ -371,6 +347,12 @@
       <Filter>Source\Galaga_USFX_L01</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\Galaga_USFX_L01\IBuildPacketeCapsulas.h">
+      <Filter>Source\Galaga_USFX_L01</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Galaga_USFX_L01\ICargarBalas.cpp">
+      <Filter>Source\Galaga_USFX_L01</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Galaga_USFX_L01\ICargarBalas.h">
       <Filter>Source\Galaga_USFX_L01</Filter>
     </ClInclude>
     <ClCompile Include="..\..\Source\Galaga_USFX_L01\IEstado.cpp">
@@ -625,10 +607,22 @@
     <ClInclude Include="..\..\Source\Galaga_USFX_L01\PacketeCapsulasEnergia.h">
       <Filter>Source\Galaga_USFX_L01</Filter>
     </ClInclude>
+    <ClCompile Include="..\..\Source\Galaga_USFX_L01\ProxyCargarBalas.cpp">
+      <Filter>Source\Galaga_USFX_L01</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Galaga_USFX_L01\ProxyCargarBalas.h">
+      <Filter>Source\Galaga_USFX_L01</Filter>
+    </ClInclude>
     <ClCompile Include="..\..\Source\Galaga_USFX_L01\PublicadorObserver.cpp">
       <Filter>Source\Galaga_USFX_L01</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\Galaga_USFX_L01\PublicadorObserver.h">
+      <Filter>Source\Galaga_USFX_L01</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Galaga_USFX_L01\RealCargarBalas.cpp">
+      <Filter>Source\Galaga_USFX_L01</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Galaga_USFX_L01\RealCargarBalas.h">
       <Filter>Source\Galaga_USFX_L01</Filter>
     </ClInclude>
     <ClCompile Include="..\..\Source\Galaga_USFX_L01\Record.cpp">

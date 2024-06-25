@@ -26,6 +26,7 @@
 #include "NaveEnemigaCaza.h"
 #include "NaveEnemigaNodriza.h"
 #include "NaveEnemigaTransporte.h"
+#include "ProxyCargarBalas.h"
 
 
 
@@ -126,6 +127,12 @@ void AGalaga_USFX_L01GameMode::BeginPlay()
 	Transporte = GetWorld()->SpawnActor<ANaveEnemigaTransporte>(ANaveEnemigaTransporte::StaticClass());
 
 	Capsula = GetWorld()->SpawnActor<ACapsulaBridge>(ACapsulaBridge::StaticClass());
+
+	Proxy = GetWorld()->SpawnActor<AProxyCargarBalas>(AProxyCargarBalas::StaticClass());
+
+	Proxy->CargarCargador();
+	Proxy->CargarCargador();
+	Proxy->CargarCargador();
 
 	}
 

@@ -70,7 +70,8 @@ public: \
 	FORCEINLINE static uint32 __PPO__Capsula() { return STRUCT_OFFSET(AGalaga_USFX_L01GameMode, Capsula); } \
 	FORCEINLINE static uint32 __PPO__Caza() { return STRUCT_OFFSET(AGalaga_USFX_L01GameMode, Caza); } \
 	FORCEINLINE static uint32 __PPO__Nodriza() { return STRUCT_OFFSET(AGalaga_USFX_L01GameMode, Nodriza); } \
-	FORCEINLINE static uint32 __PPO__Transporte() { return STRUCT_OFFSET(AGalaga_USFX_L01GameMode, Transporte); }
+	FORCEINLINE static uint32 __PPO__Transporte() { return STRUCT_OFFSET(AGalaga_USFX_L01GameMode, Transporte); } \
+	FORCEINLINE static uint32 __PPO__Proxy() { return STRUCT_OFFSET(AGalaga_USFX_L01GameMode, Proxy); }
 
 
 #define Galaga_USFX_L01_master_Source_Galaga_USFX_L01_Galaga_USFX_L01GameMode_h_18_PROLOG

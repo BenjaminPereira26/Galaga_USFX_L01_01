@@ -72,9 +72,14 @@ C:\SIS457 LABS\Galaga_USFX_L01-master\Intermediate\Build\Win64\UE4Editor\Inc\Gal
 C:/SIS457 LABS/Galaga_USFX_L01-master/Source/Galaga_USFX_L01/Barreras.cpp
 C:\SIS457 LABS\Galaga_USFX_L01-master\Source\Galaga_USFX_L01\Barreras.h
 C:\SIS457 LABS\Galaga_USFX_L01-master\Intermediate\Build\Win64\UE4Editor\Inc\Galaga_USFX_L01\Barreras.generated.h
-C:/SIS457 LABS/Galaga_USFX_L01-master/Source/Galaga_USFX_L01/CapsulaEnergia.cpp
+C:/SIS457 LABS/Galaga_USFX_L01-master/Source/Galaga_USFX_L01/CapsulaBridge.cpp
+C:\SIS457 LABS\Galaga_USFX_L01-master\Source\Galaga_USFX_L01\CapsulaBridge.h
 C:\SIS457 LABS\Galaga_USFX_L01-master\Source\Galaga_USFX_L01\CapsulaEnergia.h
 C:\SIS457 LABS\Galaga_USFX_L01-master\Intermediate\Build\Win64\UE4Editor\Inc\Galaga_USFX_L01\CapsulaEnergia.generated.h
+C:\SIS457 LABS\Galaga_USFX_L01-master\Intermediate\Build\Win64\UE4Editor\Inc\Galaga_USFX_L01\CapsulaBridge.generated.h
+C:\SIS457 LABS\Galaga_USFX_L01-master\Source\Galaga_USFX_L01\IImplementacion.h
+C:\SIS457 LABS\Galaga_USFX_L01-master\Intermediate\Build\Win64\UE4Editor\Inc\Galaga_USFX_L01\IImplementacion.generated.h
+C:/SIS457 LABS/Galaga_USFX_L01-master/Source/Galaga_USFX_L01/CapsulaEnergia.cpp
 C:/SIS457 LABS/Galaga_USFX_L01-master/Source/Galaga_USFX_L01/CapsulaEnergia100pts.cpp
 C:\SIS457 LABS\Galaga_USFX_L01-master\Source\Galaga_USFX_L01\CapsulaEnergia100pts.h
 C:\SIS457 LABS\Galaga_USFX_L01-master\Intermediate\Build\Win64\UE4Editor\Inc\Galaga_USFX_L01\CapsulaEnergia100pts.generated.h
@@ -181,8 +186,6 @@ C:\SIS457 LABS\Galaga_USFX_L01-master\Intermediate\Build\Win64\UE4Editor\Inc\Gal
 C:/SIS457 LABS/Galaga_USFX_L01-master/Source/Galaga_USFX_L01/FacadeNaveEnemigas.cpp
 C:\SIS457 LABS\Galaga_USFX_L01-master\Source\Galaga_USFX_L01\FacadeNaveEnemigas.h
 C:\SIS457 LABS\Galaga_USFX_L01-master\Source\Galaga_USFX_L01\NaveEnemigaCaza.h
-C:\SIS457 LABS\Galaga_USFX_L01-master\Source\Galaga_USFX_L01\IImplementacion.h
-C:\SIS457 LABS\Galaga_USFX_L01-master\Intermediate\Build\Win64\UE4Editor\Inc\Galaga_USFX_L01\IImplementacion.generated.h
 C:\SIS457 LABS\Galaga_USFX_L01-master\Intermediate\Build\Win64\UE4Editor\Inc\Galaga_USFX_L01\NaveEnemigaCaza.generated.h
 C:\SIS457 LABS\Galaga_USFX_L01-master\Source\Galaga_USFX_L01\NaveEnemigaEspia.h
 C:\SIS457 LABS\Galaga_USFX_L01-master\Intermediate\Build\Win64\UE4Editor\Inc\Galaga_USFX_L01\NaveEnemigaEspia.generated.h
@@ -210,6 +213,27 @@ C:\SIS457 LABS\Galaga_USFX_L01-master\Source\Galaga_USFX_L01\FNEKamikaze.h
 C:\SIS457 LABS\Galaga_USFX_L01-master\Intermediate\Build\Win64\UE4Editor\Inc\Galaga_USFX_L01\FNEKamikaze.generated.h
 C:/SIS457 LABS/Galaga_USFX_L01-master/Source/Galaga_USFX_L01/Galaga_USFX_L01.cpp
 C:\SIS457 LABS\Galaga_USFX_L01-master\Source\Galaga_USFX_L01\Galaga_USFX_L01.h
+C:/SIS457 LABS/Galaga_USFX_L01-master/Source/Galaga_USFX_L01/Galaga_USFX_L01Pawn.cpp
+C:\SIS457 LABS\Galaga_USFX_L01-master\Source\Galaga_USFX_L01\Galaga_USFX_L01Pawn.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/Character.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/CharacterMovementReplication.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\CharacterMovementReplication.generated.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/RootMotionSource.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\RootMotionSource.generated.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\Character.generated.h
+C:\SIS457 LABS\Galaga_USFX_L01-master\Source\Galaga_USFX_L01\MyAgujeroNegro.h
+C:\SIS457 LABS\Galaga_USFX_L01-master\Intermediate\Build\Win64\UE4Editor\Inc\Galaga_USFX_L01\MyAgujeroNegro.generated.h
+C:\SIS457 LABS\Galaga_USFX_L01-master\Intermediate\Build\Win64\UE4Editor\Inc\Galaga_USFX_L01\Galaga_USFX_L01Pawn.generated.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\Camera/CameraComponent.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\CameraComponent.generated.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/SpringArmComponent.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\SpringArmComponent.generated.h
+C:\SIS457 LABS\Galaga_USFX_L01-master\Source\Galaga_USFX_L01\Galaga_USFX_L01GameMode.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/GameModeBase.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\Engine/ServerStatReplicator.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ServerStatReplicator.generated.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameModeBase.generated.h
+C:\SIS457 LABS\Galaga_USFX_L01-master\Intermediate\Build\Win64\UE4Editor\Inc\Galaga_USFX_L01\Galaga_USFX_L01GameMode.generated.h
 C:/SIS457 LABS/Galaga_USFX_L01-master/Source/Galaga_USFX_L01/Galaga_USFX_L01Projectile.cpp
 C:/SIS457 LABS/Galaga_USFX_L01-master/Source/Galaga_USFX_L01/IBounceBall.cpp
 C:/SIS457 LABS/Galaga_USFX_L01-master/Source/Galaga_USFX_L01/IBuilderNodriza.cpp
@@ -221,6 +245,7 @@ C:\SIS457 LABS\Galaga_USFX_L01-master\Intermediate\Build\Win64\UE4Editor\Inc\Gal
 C:/SIS457 LABS/Galaga_USFX_L01-master/Source/Galaga_USFX_L01/IEstadoNE.cpp
 C:/SIS457 LABS/Galaga_USFX_L01-master/Source/Galaga_USFX_L01/IEstrategias.cpp
 C:/SIS457 LABS/Galaga_USFX_L01-master/Source/Galaga_USFX_L01/IExplosiveShot.cpp
+C:/SIS457 LABS/Galaga_USFX_L01-master/Source/Galaga_USFX_L01/IImplementacion.cpp
 C:/SIS457 LABS/Galaga_USFX_L01-master/Source/Galaga_USFX_L01/IngenieroObstaculos.cpp
 C:\SIS457 LABS\Galaga_USFX_L01-master\Source\Galaga_USFX_L01\IngenieroObstaculos.h
 C:\SIS457 LABS\Galaga_USFX_L01-master\Intermediate\Build\Win64\UE4Editor\Inc\Galaga_USFX_L01\IngenieroObstaculos.generated.h
@@ -245,9 +270,8 @@ C:/SIS457 LABS/Galaga_USFX_L01-master/Source/Galaga_USFX_L01/Motor.cpp
 C:/SIS457 LABS/Galaga_USFX_L01-master/Source/Galaga_USFX_L01/MotorNodriza.cpp
 C:/SIS457 LABS/Galaga_USFX_L01-master/Source/Galaga_USFX_L01/MovimientoNaves.cpp
 C:/SIS457 LABS/Galaga_USFX_L01-master/Source/Galaga_USFX_L01/MyAgujeroNegro.cpp
-C:\SIS457 LABS\Galaga_USFX_L01-master\Source\Galaga_USFX_L01\MyAgujeroNegro.h
-C:\SIS457 LABS\Galaga_USFX_L01-master\Intermediate\Build\Win64\UE4Editor\Inc\Galaga_USFX_L01\MyAgujeroNegro.generated.h
 C:/SIS457 LABS/Galaga_USFX_L01-master/Source/Galaga_USFX_L01/NaveEnemiga.cpp
+C:/SIS457 LABS/Galaga_USFX_L01-master/Source/Galaga_USFX_L01/NaveEnemigaCaza.cpp
 C:/SIS457 LABS/Galaga_USFX_L01-master/Source/Galaga_USFX_L01/NaveEnemigaCazaNieta01.cpp
 C:\SIS457 LABS\Galaga_USFX_L01-master\Source\Galaga_USFX_L01\NaveEnemigaCazaNieta01.h
 C:\SIS457 LABS\Galaga_USFX_L01-master\Intermediate\Build\Win64\UE4Editor\Inc\Galaga_USFX_L01\NaveEnemigaCazaNieta01.generated.h
@@ -261,12 +285,14 @@ C:\SIS457 LABS\Galaga_USFX_L01-master\Intermediate\Build\Win64\UE4Editor\Inc\Gal
 C:/SIS457 LABS/Galaga_USFX_L01-master/Source/Galaga_USFX_L01/NaveEnemigaEspiaNieta02.cpp
 C:\SIS457 LABS\Galaga_USFX_L01-master\Source\Galaga_USFX_L01\NaveEnemigaEspiaNieta02.h
 C:\SIS457 LABS\Galaga_USFX_L01-master\Intermediate\Build\Win64\UE4Editor\Inc\Galaga_USFX_L01\NaveEnemigaEspiaNieta02.generated.h
+C:/SIS457 LABS/Galaga_USFX_L01-master/Source/Galaga_USFX_L01/NaveEnemigaKamikaze.cpp
 C:/SIS457 LABS/Galaga_USFX_L01-master/Source/Galaga_USFX_L01/NaveEnemigaKamikazeNieta01.cpp
 C:\SIS457 LABS\Galaga_USFX_L01-master\Source\Galaga_USFX_L01\NaveEnemigaKamikazeNieta01.h
 C:\SIS457 LABS\Galaga_USFX_L01-master\Intermediate\Build\Win64\UE4Editor\Inc\Galaga_USFX_L01\NaveEnemigaKamikazeNieta01.generated.h
 C:/SIS457 LABS/Galaga_USFX_L01-master/Source/Galaga_USFX_L01/NaveEnemigaKamikazeNieta02.cpp
 C:\SIS457 LABS\Galaga_USFX_L01-master\Source\Galaga_USFX_L01\NaveEnemigaKamikazeNieta02.h
 C:\SIS457 LABS\Galaga_USFX_L01-master\Intermediate\Build\Win64\UE4Editor\Inc\Galaga_USFX_L01\NaveEnemigaKamikazeNieta02.generated.h
+C:/SIS457 LABS/Galaga_USFX_L01-master/Source/Galaga_USFX_L01/NaveEnemigaNodriza.cpp
 C:/SIS457 LABS/Galaga_USFX_L01-master/Source/Galaga_USFX_L01/NaveEnemigaNodrizaNieta01.cpp
 C:\SIS457 LABS\Galaga_USFX_L01-master\Source\Galaga_USFX_L01\NaveEnemigaNodrizaNieta01.h
 C:\SIS457 LABS\Galaga_USFX_L01-master\Intermediate\Build\Win64\UE4Editor\Inc\Galaga_USFX_L01\NaveEnemigaNodrizaNieta01.generated.h
@@ -280,6 +306,7 @@ C:\SIS457 LABS\Galaga_USFX_L01-master\Intermediate\Build\Win64\UE4Editor\Inc\Gal
 C:/SIS457 LABS/Galaga_USFX_L01-master/Source/Galaga_USFX_L01/NaveEnemigaReabastecimientoN02.cpp
 C:\SIS457 LABS\Galaga_USFX_L01-master\Source\Galaga_USFX_L01\NaveEnemigaReabastecimientoN02.h
 C:\SIS457 LABS\Galaga_USFX_L01-master\Intermediate\Build\Win64\UE4Editor\Inc\Galaga_USFX_L01\NaveEnemigaReabastecimientoN02.generated.h
+C:/SIS457 LABS/Galaga_USFX_L01-master/Source/Galaga_USFX_L01/NaveEnemigaTransporte.cpp
 C:/SIS457 LABS/Galaga_USFX_L01-master/Source/Galaga_USFX_L01/NaveEnemigaTransporteNieta01.cpp
 C:\SIS457 LABS\Galaga_USFX_L01-master\Source\Galaga_USFX_L01\NaveEnemigaTransporteNieta01.h
 C:\SIS457 LABS\Galaga_USFX_L01-master\Intermediate\Build\Win64\UE4Editor\Inc\Galaga_USFX_L01\NaveEnemigaTransporteNieta01.generated.h
